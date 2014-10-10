@@ -19173,8 +19173,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U2" library="Texas Instruments_By_element14_Batch_1" deviceset="TLC5917ID" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1K"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device=""/>
+<part name="R4" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="PWR" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="DONE" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
@@ -19235,7 +19235,7 @@ to batteries</text>
 <text x="-162.56" y="22.86" size="1.778" layer="91" distance="5">1.0K = 1000mA</text>
 <text x="-162.56" y="20.32" size="1.778" layer="91" distance="5">2.0K = 500mA</text>
 <text x="-111.76" y="71.12" size="1.778" layer="91" distance="5">NEED TO SET THIS TO VREG.
-THIS IS DESIGNED FOR 6V SOLAR PANEL</text>
+For 6V solar panel, use 1KOhm / 1KOhm</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="106.68" y="60.96"/>

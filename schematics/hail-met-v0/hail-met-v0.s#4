@@ -12527,7 +12527,7 @@ Source: AVX .. aphvc.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="172.72" y="73.66" size="1.778" layer="91">PWM pins:
+<text x="154.94" y="68.58" size="1.778" layer="91">PWM pins:
 ---------
 PB3
 PB2
@@ -12538,7 +12538,7 @@ PD3</text>
 <text x="-38.1" y="15.24" size="1.778" layer="91">JST jack
 to batteries</text>
 <text x="0" y="96.52" size="1.778" layer="91">Voltage regulator for microcontroller</text>
-<text x="172.72" y="63.5" size="1.778" layer="91">LED Driver</text>
+<text x="203.2" y="66.04" size="1.778" layer="91">LED Driver</text>
 <wire x1="-162.56" y1="104.14" x2="-162.56" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="-162.56" y1="5.08" x2="-20.32" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="-20.32" y1="5.08" x2="-20.32" y2="104.14" width="0.1524" layer="94"/>
@@ -12561,9 +12561,9 @@ to batteries</text>
 <instance part="JP_BATT" gate="G$1" x="-25.4" y="30.48"/>
 <instance part="IC1" gate="G$1" x="-76.2" y="35.56"/>
 <instance part="GND5" gate="1" x="-35.56" y="25.4"/>
-<instance part="U2" gate="A" x="182.88" y="43.18"/>
-<instance part="GND6" gate="1" x="160.02" y="25.4"/>
-<instance part="P+2" gate="G$1" x="160.02" y="53.34"/>
+<instance part="U2" gate="A" x="213.36" y="45.72"/>
+<instance part="GND6" gate="1" x="190.5" y="27.94"/>
+<instance part="P+2" gate="G$1" x="190.5" y="55.88"/>
 <instance part="R3" gate="G$1" x="-101.6" y="58.42" rot="R90"/>
 <instance part="R4" gate="G$1" x="-101.6" y="68.58" rot="R90"/>
 <instance part="GND7" gate="1" x="-101.6" y="50.8"/>
@@ -12639,7 +12639,7 @@ to batteries</text>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="U2" gate="A" pin="GND"/>
-<wire x1="160.02" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="30.48" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
@@ -12718,9 +12718,9 @@ to batteries</text>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VDD"/>
-<wire x1="162.56" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="53.34" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
-<wire x1="160.02" y1="50.8" x2="160.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="53.34" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -12761,56 +12761,56 @@ to batteries</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT0"/>
-<wire x1="203.2" y1="50.8" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="53.34" x2="246.38" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT1"/>
-<wire x1="203.2" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="50.8" x2="246.38" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT2"/>
-<wire x1="203.2" y1="45.72" x2="215.9" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="48.26" x2="246.38" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT3"/>
-<wire x1="203.2" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="45.72" x2="246.38" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT4"/>
-<wire x1="203.2" y1="40.64" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="43.18" x2="246.38" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT5"/>
-<wire x1="203.2" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="40.64" x2="246.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT6"/>
-<wire x1="203.2" y1="35.56" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="38.1" x2="246.38" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OUT7"/>
-<wire x1="203.2" y1="33.02" x2="215.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="35.56" x2="246.38" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED_OE" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="~OE(ED2)"/>
-<wire x1="162.56" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
-<label x="149.86" y="33.02" size="1.778" layer="95"/>
+<wire x1="193.04" y1="35.56" x2="180.34" y2="35.56" width="0.1524" layer="91"/>
+<label x="180.34" y="35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB1(OC1A)"/>
@@ -12821,19 +12821,19 @@ to batteries</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="LE(ED1)"/>
-<wire x1="162.56" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="38.1" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="SDI"/>
-<wire x1="162.56" y1="45.72" x2="149.86" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="48.26" x2="180.34" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="CLK"/>
-<wire x1="162.56" y1="43.18" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="45.72" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
