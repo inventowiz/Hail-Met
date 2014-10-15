@@ -1,6 +1,7 @@
 // Sample program using TLC5917IN LED driver
 
 #include "LedDriver.h"
+#include <SPI.h>
 
 void setup() {
   Serial.begin(115200);
