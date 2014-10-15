@@ -1,3 +1,6 @@
+#ifndef RN52_H
+#define RN52_H
+
 #include <string.h>
 #include <Stream.h>
 
@@ -107,3 +110,5 @@ class RN52 {
     bool enterCommandMode();
     bool exitCommandMode();
 };
+
+#endif

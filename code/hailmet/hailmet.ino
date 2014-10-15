@@ -1,8 +1,13 @@
-#include <RN52.h>
 #include <PinChangeInt.h>
+#include <SPI.h>
+#include "RN52.h"
+#include "LedDriver.h"
+#include "HelmetIO.h"
 
 int led = 13;
 RN52 bt;
+LedDriver ledDriver;
+HelmetIO helmet;
 
 bool setDisc = false;
 bool checkState = false;
@@ -27,11 +32,11 @@ void stateChanged() {
   switch(connStatus) {
     case 1:
     case 2:
-      digitalWrite(13, LOW);
+      //digitalWrite(led, LOW);
     break;
 
     case 3:
-      digitalWrite(13, HIGH);
+      //digitalWrite(led, HIGH);
     break;
   }
 
@@ -47,7 +52,6 @@ void stateChanged() {
 }
 
 void setup() {
-  pinMode(led, OUTPUT);
   pinMode(4, OUTPUT);
   digitalWrite(4, HIGH);
   pinMode(2, INPUT); digitalWrite(2, HIGH);
@@ -57,7 +61,13 @@ void setup() {
   Serial.begin(115200);
   delay(5);
   Serial.setTimeout(60000);
-  bt.init(Serial, 4);
+  //bt.init(Serial, 4);
+  ledDriver.init(12, 10);
+  helmet.init(ledDriver);
+  helmet.enableHeadlight();
+  helmet.enableTaillight();
+  helmet.enableLeftTurnSignal();
+  helmet.enableRightTurnSignal();
 }
 
 void loop() {
@@ -70,4 +80,7 @@ void loop() {
     stateChanged();
     checkState = false;
   }
+  
+  helmet.updateLights();
+  delay(1000);
 }

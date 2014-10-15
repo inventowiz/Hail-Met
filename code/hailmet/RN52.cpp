@@ -1,5 +1,5 @@
 #include "RN52.h"
-#include "Arduino.h"
+#include <Arduino.h>
 
 void RN52::updateConnectionStatus() {
   int val;
@@ -39,7 +39,7 @@ void RN52::init(Stream &serial, int gpio9Pin) {
   this->gpio9Pin = gpio9Pin;
   this->isCommanding = false;
 
-  pinMode(gpio9Pin, OUTPUT);
+  pinMode(this->gpio9Pin, OUTPUT);
 
   enterCommandMode();
   updateConnectionStatus();
