@@ -40,10 +40,7 @@ void RN52::init(Stream &serial, int gpio9Pin) {
   this->isCommanding = false;
 
   pinMode(this->gpio9Pin, OUTPUT);
-
-  enterCommandMode();
-  updateConnectionStatus();
-  exitCommandMode();
+  digitalWrite(this->gpio9Pin, HIGH);
 }
 
 bool RN52::isInCommandMode() {

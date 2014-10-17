@@ -47,7 +47,6 @@ void HelmetIO::init(LedDriver &ledDriver) {
   rightSignalsActive = 0;
   
   this->ledDriver->write(0);
-  this->ledDriver->enableOutput();
 }
 
 // Called within loop (or timer interrupt)
@@ -76,6 +75,7 @@ void HelmetIO::enableLeftTurnSignal() {
 }
 
 void HelmetIO::disableLeftTurnSignal() {
+  leftSignalsActive = 0;
   leftSignal = false;
 }
 
@@ -84,5 +84,6 @@ void HelmetIO::enableRightTurnSignal() {
 }
 
 void HelmetIO::disableRightTurnSignal() {
+  rightSignalsActive = 0;
   rightSignal = false;
 }
