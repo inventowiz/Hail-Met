@@ -1,11 +1,10 @@
-#include <PinChangeInt.h>
-#include <TimerOne.h>
+#include "PinChangeInt.h"
+#include "TimerOne.h"
 #include <SPI.h>
-#include <Bounce2.h>
+#include "Bounce2.h"
 #include "RN52.h"
 #include "LedDriver.h"
 #include "HelmetIO.h"
-
 
 #define PIN_SIGNAL_LEFT 2
 #define PIN_SIGNAL_RIGHT 3
