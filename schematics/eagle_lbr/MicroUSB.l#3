@@ -114,6 +114,7 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="OC_DIGIKEY" value="609-4616-1-ND" constant="no"/>
 <attribute name="WEBSITE" value="http://www.digikey.com/product-detail/en/10118193-0001LF/609-4616-1-ND/2785380"/>
 </technology>
 </technologies>
