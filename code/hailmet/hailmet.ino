@@ -110,7 +110,6 @@ void setup() {
   
   helmet.init(ledDriver);
   helmet.enableTaillight();
-  helmet.enableHeadlight();
   helmet.updateLights();
 
   Timer1.initialize(500000);
@@ -123,8 +122,15 @@ void loop() {
     checkState = false;
   }
   
-  lightSensorVal = analogRead(PIN_LIGHT_SENSOR);  
-  ledDriver.setBrightness(map(lightSensorVal, 0, 1023, 0, 255));
+  lightSensorVal = analogRead(PIN_LIGHT_SENSOR);
+  lightSensorVal = map(lightSensorVal, 0, 1023, 0, 255);
+  ledDriver.setBrightness(max(255 - lightSensorVal, 30));
+  
+  if (lightSensorVal < 50) {
+    helmet.enableHeadlight();
+  } else {
+    helmet.disableHeadlight();
+  }
   
   signalLeft.update();
   signalRight.update();
