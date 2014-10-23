@@ -13,7 +13,6 @@
 #define PIN_BT_COMMAND_TOGGLE 10
 #define PIN_BT_EVENT_CHANGE 8
 #define PIN_BT_DISCOVERABLE 4
-#define PIN_BT_PAIRING 7
 #define PIN_BT_CONNECTED 5
 #define PIN_LIGHT_SENSOR A0
 
@@ -23,6 +22,9 @@ HelmetIO helmet;
 
 Bounce signalLeft = Bounce();
 Bounce signalRight = Bounce();
+Bounce setBtDiscoverable = Bounce();
+int prevSetBtDiscoverable = 0;
+int connLightState = 0;
 
 bool setDiscoverable = false;
 bool checkState = false;
@@ -31,10 +33,25 @@ int lightSensorVal;
 
 void timerInterrupt() {
   helmet.updateLights();
-}
+  
+  int connStatus = bt.getConnectionStatus();
+  
+  switch(connStatus) {
+    case 1:
+      digitalWrite(PIN_BT_CONNECTED, LOW);
+      connLightState = 0;      
+    break;
+    case 2:
+      digitalWrite(PIN_BT_CONNECTED, connLightState);
+      connLightState = !connLightState;
+    break;
 
-void btSetDiscoverable() {
-  setDiscoverable = true;
+    case 3:
+      digitalWrite(PIN_BT_CONNECTED, HIGH);
+      connLightState = 1;
+    break;
+  }
+  
 }
 
 void btStateChanged() {
@@ -48,18 +65,6 @@ void handleBtStateChange() {
   }
 
   bt.updateConnectionStatus();
-  connStatus = bt.getConnectionStatus();
-  
-  switch(connStatus) {
-    case 1:
-    case 2:
-      digitalWrite(PIN_BT_CONNECTED, LOW);
-    break;
-
-    case 3:
-      digitalWrite(PIN_BT_CONNECTED, HIGH);
-    break;
-  }
 
   if (connStatus == 14) {
     // Turn on low battery indicator light
@@ -81,15 +86,14 @@ void setup() {
 
   signalLeft.attach(PIN_SIGNAL_LEFT);
   signalRight.attach(PIN_SIGNAL_RIGHT);
+  setBtDiscoverable.attach(PIN_BT_DISCOVERABLE);
 
   signalLeft.interval(20);
   signalRight.interval(20);
+  setBtDiscoverable.interval(20);
   
   pinMode(PIN_BT_CONNECTED, OUTPUT);
   digitalWrite(PIN_BT_CONNECTED, LOW);
-  
-  pinMode(PIN_BT_PAIRING, OUTPUT);
-  digitalWrite(PIN_BT_PAIRING, LOW);
   
   pinMode(PIN_BT_EVENT_CHANGE, INPUT);
   digitalWrite(PIN_BT_EVENT_CHANGE, HIGH);
@@ -97,7 +101,6 @@ void setup() {
   
   pinMode(PIN_BT_DISCOVERABLE, INPUT);
   digitalWrite(PIN_BT_DISCOVERABLE, HIGH);
-  PCintPort::attachInterrupt(PIN_BT_DISCOVERABLE, &btSetDiscoverable, FALLING);
   
   pinMode(PIN_LIGHT_SENSOR, INPUT);
 
@@ -132,8 +135,10 @@ void loop() {
     helmet.disableHeadlight();
   }
   
+  
   signalLeft.update();
   signalRight.update();
+  setBtDiscoverable.update();
 
   if (signalLeft.read()) {
     // Active low!
@@ -141,16 +146,18 @@ void loop() {
   } else {
     helmet.enableLeftTurnSignal();
   }
-
+  
   if (signalRight.read()) {
     // Active low!
     helmet.disableRightTurnSignal();
   } else {
     helmet.enableRightTurnSignal();
   }
+
   
-  if (setDiscoverable) {
+  if (!setBtDiscoverable.read() && prevSetBtDiscoverable) {
     bt.setDiscoverable(true);
-    setDiscoverable = false;
   }
+  
+  prevSetBtDiscoverable = setBtDiscoverable.read();
 }
