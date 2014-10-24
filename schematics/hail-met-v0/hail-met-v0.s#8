@@ -18151,10 +18151,10 @@ PD3</text>
 to batteries</text>
 <text x="2.54" y="96.52" size="1.778" layer="94">Voltage regulator for microcontroller</text>
 <text x="251.46" y="50.8" size="1.778" layer="94">LED Driver</text>
-<wire x1="-187.96" y1="106.68" x2="-187.96" y2="0" width="0.1524" layer="94"/>
+<wire x1="-187.96" y1="104.14" x2="-187.96" y2="0" width="0.1524" layer="94"/>
 <wire x1="-187.96" y1="0" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="104.14" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="104.14" x2="-187.96" y2="106.68" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="104.14" x2="-187.96" y2="104.14" width="0.1524" layer="94"/>
 <text x="-139.7" y="99.06" size="1.778" layer="94">Power input (USB, Solar)</text>
 <text x="-58.42" y="5.08" size="1.778" layer="91" align="bottom-right">No Thermistor:</text>
 <text x="-58.42" y="2.54" size="1.778" layer="91" distance="5" align="bottom-right">10K NTC Thermistor:</text>
@@ -18246,7 +18246,8 @@ SW-BSEL Bluetooth Select</text>
 <wire x1="-17.78" y1="96.52" x2="-17.78" y2="73.66" width="0.1524" layer="94"/>
 <wire x1="-17.78" y1="73.66" x2="-50.8" y2="73.66" width="0.1524" layer="94"/>
 <wire x1="-50.8" y1="73.66" x2="-50.8" y2="96.52" width="0.1524" layer="94"/>
-<text x="2.54" y="71.12" size="1.778" layer="94">Voltage Regulator:
+<text x="2.54" y="68.58" size="1.778" layer="94">Voltage Regulator:
+LM317DCYR
 296-12602-1-ND</text>
 </plain>
 <instances>
@@ -19064,24 +19065,6 @@ SW-BSEL Bluetooth Select</text>
 <wire x1="132.08" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="132.08" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
-<wire x1="132.08" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="132.08" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD5(T1)"/>
@@ -19660,18 +19643,28 @@ SW-BSEL Bluetooth Select</text>
 <wire x1="218.44" y1="-66.04" x2="220.98" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$78" class="0">
+<net name="BTH_EVENT" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO2"/>
 <wire x1="127" y1="-55.88" x2="106.68" y2="-55.88" width="0.1524" layer="91"/>
 <label x="106.68" y="-55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
+<wire x1="132.08" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
+<label x="134.62" y="58.42" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="N$79" class="0">
+<net name="BTH_CMD" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO9"/>
 <wire x1="127" y1="-71.12" x2="106.68" y2="-71.12" width="0.1524" layer="91"/>
 <label x="106.68" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="132.08" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="134.62" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPU_INT" class="0">
@@ -19807,6 +19800,18 @@ SW-BSEL Bluetooth Select</text>
 <pinref part="EXT_PWR_JACK" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="86.36" x2="-30.48" y2="86.36" width="0.1524" layer="91"/>
 <label x="-43.18" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DEV_EN" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="PWREN"/>
+<wire x1="142.24" y1="-38.1" x2="142.24" y2="-27.94" width="0.1524" layer="91"/>
+<label x="142.24" y="-33.02" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
+<wire x1="132.08" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
+<label x="134.62" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

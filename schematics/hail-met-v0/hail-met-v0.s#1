@@ -18199,7 +18199,7 @@ and weight of the helmet.</text>
 <text x="58.42" y="-10.16" size="1.778" layer="94">Breakout for ATmega328</text>
 <text x="71.12" y="-78.74" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
-<text x="243.84" y="-50.8" size="1.778" layer="91">Names:
+<text x="238.76" y="-50.8" size="1.778" layer="91">Names:
 ------
 LED0-LF  Left Front
 LED0-IL  Indicator Left

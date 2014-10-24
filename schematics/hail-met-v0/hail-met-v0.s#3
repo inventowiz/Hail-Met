@@ -18248,6 +18248,7 @@ SW-BSEL Bluetooth Select</text>
 <text x="2.54" y="68.58" size="1.778" layer="94">Voltage Regulator:
 LM317DCYR
 296-12602-1-ND</text>
+<text x="96.52" y="20.32" size="1.778" layer="94">Note: Processor pins do not match button pins yet...</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="106.68" y="60.96"/>
@@ -19076,14 +19077,14 @@ LM317DCYR
 <label x="134.62" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="BT_CONN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD5(T1)"/>
 <wire x1="132.08" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
 <label x="134.62" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$40" class="0">
+<net name="BT_PAIR" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD7(AIN1)"/>
 <wire x1="132.08" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
@@ -19787,30 +19788,30 @@ LM317DCYR
 <label x="-134.62" y="-17.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="132.08" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
-<label x="134.62" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PB1" class="0">
-<segment>
 <pinref part="U1" gate="G$1" pin="PB1(OC1A)"/>
 <wire x1="132.08" y1="38.1" x2="142.24" y2="38.1" width="0.1524" layer="91"/>
 <label x="134.62" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD2" class="0">
+<net name="SIG_LEFT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
 <wire x1="132.08" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="134.62" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PD3" class="0">
+<net name="SIG_RIGHT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
 <wire x1="132.08" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
 <label x="134.62" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_DISC" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
+<wire x1="132.08" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
+<label x="134.62" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

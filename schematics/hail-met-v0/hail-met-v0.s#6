@@ -18040,10 +18040,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="LED4-RF" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED5-RM" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED6-RR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="LED7-HF" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="LED7-LB" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED0-IL" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED0-IR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="JP11" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="LED_CREE" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="P+8" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+9" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+10" library="SparkFun" deviceset="3.3V" device=""/>
@@ -18211,7 +18211,7 @@ LED4-RF  Right Front
 LED4-IR  Indicator Right
 LED5-RM  Right Middle
 LED6-RR  Right Rear
-LED7-HF  Headlight Front</text>
+LED7-LB  Low-battery indicator</text>
 <wire x1="-2.54" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="58.42" y1="53.34" x2="58.42" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="58.42" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
@@ -18289,10 +18289,10 @@ LM317DCYR
 <instance part="LED4-RF" gate="G$1" x="231.14" y="-30.48" rot="R180"/>
 <instance part="LED5-RM" gate="G$1" x="231.14" y="-45.72" rot="R180"/>
 <instance part="LED6-RR" gate="G$1" x="231.14" y="-60.96" rot="R180"/>
-<instance part="LED7-HF" gate="G$1" x="231.14" y="-76.2" rot="R180"/>
+<instance part="LED7-LB" gate="G$1" x="231.14" y="-76.2" rot="R180"/>
 <instance part="LED0-IL" gate="G$1" x="205.74" y="-15.24" rot="R180"/>
 <instance part="LED0-IR" gate="G$1" x="231.14" y="-15.24" rot="R180"/>
-<instance part="JP11" gate="G$1" x="160.02" y="-17.78" rot="R180"/>
+<instance part="LED_CREE" gate="G$1" x="160.02" y="-17.78" rot="R180"/>
 <instance part="P+8" gate="G$1" x="190.5" y="-30.48"/>
 <instance part="P+9" gate="G$1" x="190.5" y="-45.72"/>
 <instance part="P+10" gate="G$1" x="215.9" y="-30.48"/>
@@ -18694,7 +18694,7 @@ LM317DCYR
 </segment>
 <segment>
 <pinref part="P+13" gate="G$1" pin="3.3V"/>
-<pinref part="LED7-HF" gate="G$1" pin="1"/>
+<pinref part="LED7-LB" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="-76.2" x2="223.52" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18724,7 +18724,7 @@ LM317DCYR
 </segment>
 <segment>
 <pinref part="P+18" gate="G$1" pin="3.3V"/>
-<pinref part="JP11" gate="G$1" pin="1"/>
+<pinref part="LED_CREE" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="-17.78" x2="152.4" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -19398,7 +19398,7 @@ LM317DCYR
 </net>
 <net name="N$61" class="0">
 <segment>
-<pinref part="LED7-HF" gate="G$1" pin="2"/>
+<pinref part="LED7-LB" gate="G$1" pin="2"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -19434,7 +19434,7 @@ LM317DCYR
 </net>
 <net name="N$67" class="0">
 <segment>
-<pinref part="JP11" gate="G$1" pin="2"/>
+<pinref part="LED_CREE" gate="G$1" pin="2"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 </segment>
 </net>

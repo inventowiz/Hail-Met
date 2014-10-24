@@ -18248,7 +18248,11 @@ SW-BSEL Bluetooth Select</text>
 <text x="2.54" y="68.58" size="1.778" layer="94">Voltage Regulator:
 LM317DCYR
 296-12602-1-ND</text>
-<text x="96.52" y="20.32" size="1.778" layer="94">Note: Processor pins do not match button pins yet...</text>
+<text x="109.22" y="10.16" size="1.778" layer="94">Note: Processor pins do not match
+button pins yet, and pins and there
+is 1 less pin than expected. ADC6/
+ADC7 were factored in as pins, but
+not on standard Arduino IDE(?)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="106.68" y="60.96"/>
