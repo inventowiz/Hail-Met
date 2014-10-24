@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -18225,6 +18225,140 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="semicon-smd-ipc">
+<description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
+A few devices defined according to the IPC standard.&lt;p&gt;
+Based on:&lt;p&gt;
+IPC-SM-782&lt;br&gt;
+IRevision A, August 1993&lt;br&gt;
+Includes Amendment 1, October 1996&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23W">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+wave soldering</description>
+<wire x1="-1.973" y1="1.983" x2="1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-1.983" x2="-1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-1.983" x2="-1.973" y2="1.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="1.983" x2="1.973" y2="-1.983" width="0.0508" layer="39"/>
+<wire x1="1.422" y1="0.66" x2="1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.66" x2="-1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.66" x2="-1.422" y2="0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.66" x2="1.422" y2="0.66" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.303" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.303" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.303" dx="1" dy="1.4" layer="1"/>
+<text x="-2.03" y="2.0701" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.9949" y="-3.3701" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<rectangle x1="-0.5001" y1="-0.5001" x2="0.5001" y2="0.5001" layer="35"/>
+</package>
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT89">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<smd name="1" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="3" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
+<smd name="2" x="0" y="-1.727" dx="0.8" dy="1.9" layer="1"/>
+<smd name="2@1" x="0" y="0.94" dx="2.032" dy="3.65" layer="1" roundness="75"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4051" y="-4.3449" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
+<rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
+<rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.0399" x2="0.3081" y2="-1.4239" width="0.1524" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NPN-TRANSISTOR_" prefix="Q" uservalue="yes">
+<description>&lt;B&gt;NPN TRANSISTOR&lt;/B&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23W" package="SOT23W">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT89" package="SOT89">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18243,17 +18377,15 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP_BATT" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="IC1" library="adafruit" deviceset="MCP73871" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="U2" library="Texas Instruments_By_element14_Batch_1" deviceset="TLC5917ID" device=""/>
+<part name="TLC5917ID" library="Texas Instruments_By_element14_Batch_1" deviceset="TLC5917ID" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="PWR" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="DONE" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="CHRG/LBO" library="adafruit" deviceset="LED" device="CHIP-LED0805" value="ORANGE"/>
-<part name="JP_SOLAR" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-US" device="E5-13" value="4700uF"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
@@ -18273,7 +18405,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="LED4-RF" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED5-RM" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED6-RR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="LED7-LB" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="LED7-FREE" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED0-IL" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED0-IR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED_CREE" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
@@ -18287,7 +18419,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="P+15" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+16" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+17" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="P+18" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="ATM_PWR" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
 <part name="ATM_PB" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
@@ -18317,13 +18448,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R24" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="SPK_L" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="SPK_R" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="MIC" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="U$3" library="RN52" deviceset="RN52" device=""/>
 <part name="U$2" library="MicroUSB" deviceset="10118193" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
-<part name="U$4" library="SparkFun" deviceset="LM4871" device=""/>
+<part name="LM4871" library="SparkFun" deviceset="LM4871" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="RI_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
@@ -18362,8 +18490,17 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="U$5" library="SparkFun" deviceset="TEMT6000" device=""/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="PTH"/>
+<part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
+<part name="JBATT" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
+<part name="JSOLAR" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
+<part name="MIC_L" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
+<part name="MIC_R" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
+<part name="SPK_L" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
+<part name="SPK_R" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
+<part name="Q1" library="semicon-smd-ipc" deviceset="NPN-TRANSISTOR_" device="SOT89"/>
+<part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18415,9 +18552,9 @@ Validate:</text>
 <wire x1="116.84" y1="-96.52" x2="116.84" y2="-7.62" width="0.1524" layer="94"/>
 <text x="-160.02" y="2.54" size="1.778" layer="91">Done, need VCC resistor check</text>
 <wire x1="-187.96" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="50.8" y1="-7.62" x2="50.8" y2="-104.14" width="0.1524" layer="94"/>
-<wire x1="50.8" y1="-104.14" x2="-187.96" y2="-104.14" width="0.1524" layer="94"/>
-<wire x1="-187.96" y1="-104.14" x2="-187.96" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="-7.62" x2="50.8" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="50.8" y1="-106.68" x2="-187.96" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="-187.96" y1="-106.68" x2="-187.96" y2="-7.62" width="0.1524" layer="94"/>
 <text x="-185.42" y="-10.16" size="1.778" layer="94">Bluetooth</text>
 <text x="165.1" y="-93.98" size="1.778" layer="91">Note: Pin headers used so wires can be soldered
 directly to board. Design decision based on cost
@@ -18440,12 +18577,7 @@ LED4-RF  Right Front
 LED4-IR  Indicator Right
 LED5-RM  Right Middle
 LED6-RR  Right Rear
-LED7-LB  Low-battery indicator</text>
-<wire x1="-2.54" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="94"/>
-<wire x1="58.42" y1="53.34" x2="58.42" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="58.42" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="53.34" width="0.1524" layer="94"/>
-<text x="0" y="48.26" size="1.778" layer="94">Step-up converter for USB phone port</text>
+LED7-FREE</text>
 <wire x1="165.1" y1="104.14" x2="165.1" y2="63.5" width="0.1524" layer="94"/>
 <wire x1="165.1" y1="63.5" x2="243.84" y2="63.5" width="0.1524" layer="94"/>
 <wire x1="243.84" y1="63.5" x2="243.84" y2="104.14" width="0.1524" layer="94"/>
@@ -18483,6 +18615,9 @@ button pins yet, and pins and there
 is 1 less pin than expected. ADC6/
 ADC7 were factored in as pins, but
 not on standard Arduino IDE(?)</text>
+<text x="-38.1" y="-104.14" size="1.778" layer="94">Do we need these jumpers?</text>
+<text x="-86.36" y="-96.52" size="1.778" layer="94">Mic required to have dBV
+between -40 and -60</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="106.68" y="60.96"/>
@@ -18493,17 +18628,15 @@ not on standard Arduino IDE(?)</text>
 <instance part="GND2" gate="1" x="40.64" y="66.04"/>
 <instance part="GND3" gate="1" x="48.26" y="81.28"/>
 <instance part="GND4" gate="1" x="2.54" y="81.28"/>
-<instance part="JP_BATT" gate="G$1" x="-12.7" y="30.48"/>
 <instance part="IC1" gate="G$1" x="-91.44" y="35.56"/>
 <instance part="GND5" gate="1" x="-22.86" y="25.4"/>
-<instance part="U2" gate="A" x="154.94" y="-53.34"/>
+<instance part="TLC5917ID" gate="A" x="154.94" y="-53.34"/>
 <instance part="GND6" gate="1" x="132.08" y="-71.12"/>
 <instance part="P+2" gate="G$1" x="132.08" y="-43.18"/>
 <instance part="GND7" gate="1" x="-116.84" y="50.8"/>
 <instance part="PWR" gate="G$1" x="-132.08" y="50.8" rot="R90"/>
 <instance part="DONE" gate="G$1" x="-144.78" y="50.8" rot="R90"/>
 <instance part="CHRG/LBO" gate="G$1" x="-157.48" y="50.8" rot="R90"/>
-<instance part="JP_SOLAR" gate="G$1" x="-137.16" y="83.82"/>
 <instance part="GND8" gate="1" x="-147.32" y="81.28"/>
 <instance part="C3" gate="G$1" x="-93.98" y="91.44"/>
 <instance part="GND9" gate="1" x="-93.98" y="83.82" rot="MR0"/>
@@ -18523,7 +18656,7 @@ not on standard Arduino IDE(?)</text>
 <instance part="LED4-RF" gate="G$1" x="231.14" y="-30.48" rot="R180"/>
 <instance part="LED5-RM" gate="G$1" x="231.14" y="-45.72" rot="R180"/>
 <instance part="LED6-RR" gate="G$1" x="231.14" y="-60.96" rot="R180"/>
-<instance part="LED7-LB" gate="G$1" x="231.14" y="-76.2" rot="R180"/>
+<instance part="LED7-FREE" gate="G$1" x="231.14" y="-76.2" rot="R180"/>
 <instance part="LED0-IL" gate="G$1" x="205.74" y="-15.24" rot="R180"/>
 <instance part="LED0-IR" gate="G$1" x="231.14" y="-15.24" rot="R180"/>
 <instance part="LED_CREE" gate="G$1" x="160.02" y="-17.78" rot="R180"/>
@@ -18537,7 +18670,6 @@ not on standard Arduino IDE(?)</text>
 <instance part="P+15" gate="G$1" x="190.5" y="-60.96"/>
 <instance part="P+16" gate="G$1" x="193.04" y="-15.24"/>
 <instance part="P+17" gate="G$1" x="218.44" y="-15.24"/>
-<instance part="P+18" gate="G$1" x="144.78" y="-17.78"/>
 <instance part="ATM_PWR" gate="G$1" x="78.74" y="-25.4" rot="R180"/>
 <instance part="ATM_PB" gate="G$1" x="78.74" y="-55.88" rot="R180"/>
 <instance part="R13" gate="G$1" x="-160.02" y="63.5" rot="R90"/>
@@ -18567,19 +18699,16 @@ not on standard Arduino IDE(?)</text>
 <instance part="R22" gate="G$1" x="193.04" y="-17.78" rot="R180"/>
 <instance part="R23" gate="G$1" x="218.44" y="-17.78" rot="R180"/>
 <instance part="R24" gate="G$1" x="147.32" y="-20.32" rot="R180"/>
-<instance part="SPK_L" gate="G$1" x="45.72" y="-27.94" rot="R180"/>
-<instance part="SPK_R" gate="G$1" x="45.72" y="-58.42" rot="R180"/>
-<instance part="MIC" gate="G$1" x="-58.42" y="-66.04" rot="R180"/>
 <instance part="U$3" gate="G$1" x="-119.38" y="-55.88"/>
 <instance part="U$2" gate="G$1" x="-162.56" y="88.9"/>
 <instance part="GND18" gate="1" x="-129.54" y="-15.24"/>
-<instance part="U$4" gate="G$1" x="-2.54" y="-43.18"/>
+<instance part="LM4871" gate="G$1" x="-2.54" y="-43.18"/>
 <instance part="P+3" gate="G$1" x="-22.86" y="-30.48"/>
 <instance part="GND19" gate="1" x="-27.94" y="-40.64"/>
 <instance part="RI_L" gate="G$1" x="-50.8" y="-38.1"/>
 <instance part="GND20" gate="1" x="-73.66" y="-53.34"/>
-<instance part="GND21" gate="1" x="35.56" y="-33.02"/>
-<instance part="GND22" gate="1" x="35.56" y="-63.5"/>
+<instance part="GND21" gate="1" x="33.02" y="-33.02"/>
+<instance part="GND22" gate="1" x="33.02" y="-63.5"/>
 <instance part="C2" gate="G$1" x="-27.94" y="-53.34"/>
 <instance part="GND23" gate="1" x="-27.94" y="-60.96"/>
 <instance part="RI_R" gate="G$1" x="-50.8" y="-50.8"/>
@@ -18609,11 +18738,20 @@ not on standard Arduino IDE(?)</text>
 <instance part="GND28" gate="1" x="238.76" y="45.72"/>
 <instance part="EXT_PWR_JACK" gate="G$1" x="-22.86" y="86.36" rot="R180"/>
 <instance part="GND29" gate="1" x="-43.18" y="81.28"/>
-<instance part="U$5" gate="G$1" x="259.08" y="86.36"/>
-<instance part="GND30" gate="1" x="261.62" y="68.58"/>
-<instance part="P+5" gate="G$1" x="261.62" y="91.44"/>
-<instance part="R12" gate="G$1" x="261.62" y="76.2" rot="R270"/>
+<instance part="U$5" gate="G$1" x="264.16" y="86.36"/>
+<instance part="GND30" gate="1" x="266.7" y="68.58"/>
+<instance part="P+5" gate="G$1" x="266.7" y="91.44"/>
+<instance part="R12" gate="G$1" x="266.7" y="76.2" rot="R270"/>
 <instance part="J1" gate="G$1" x="149.86" y="15.24"/>
+<instance part="P+4" gate="G$1" x="-106.68" y="-22.86"/>
+<instance part="JBATT" gate="G$1" x="-12.7" y="30.48"/>
+<instance part="JSOLAR" gate="G$1" x="-137.16" y="83.82"/>
+<instance part="MIC_L" gate="G$1" x="-53.34" y="-68.58"/>
+<instance part="MIC_R" gate="G$1" x="-53.34" y="-83.82"/>
+<instance part="SPK_L" gate="G$1" x="43.18" y="-30.48"/>
+<instance part="SPK_R" gate="G$1" x="43.18" y="-60.96"/>
+<instance part="Q1" gate="G$1" x="137.16" y="-25.4"/>
+<instance part="GND17" gate="1" x="139.7" y="-33.02"/>
 </instances>
 <busses>
 </busses>
@@ -18651,23 +18789,23 @@ not on standard Arduino IDE(?)</text>
 <junction x="71.12" y="35.56"/>
 </segment>
 <segment>
-<pinref part="JP_BATT" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="30.48" x2="-22.86" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="30.48" x2="-22.86" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="JBATT" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="U2" gate="A" pin="GND"/>
+<pinref part="TLC5917ID" gate="A" pin="GND"/>
 <wire x1="132.08" y1="-68.58" x2="134.62" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="JP_SOLAR" gate="G$1" pin="2"/>
 <wire x1="-147.32" y1="83.82" x2="-139.7" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="83.82" x2="-149.86" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-147.32" y="83.82"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="JSOLAR" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="-"/>
@@ -18755,7 +18893,7 @@ not on standard Arduino IDE(?)</text>
 <junction x="-111.76" y="-22.86"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="LM4871" gate="G$1" pin="GND"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="-27.94" y1="-38.1" x2="-22.86" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -18771,18 +18909,17 @@ not on standard Arduino IDE(?)</text>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SPK_L" gate="G$1" pin="2"/>
-<pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="35.56" y1="-30.48" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SPK_R" gate="G$1" pin="2"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="35.56" y1="-60.96" x2="38.1" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="SPK_R" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="-60.96" x2="40.64" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND23" gate="1" pin="GND"/>
+<pinref part="LM4871" gate="G$1" pin="SHUTDWN"/>
+<wire x1="-27.94" y1="-58.42" x2="-22.86" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-58.42" x2="-22.86" y2="-53.34" width="0.1524" layer="91"/>
+<junction x="-27.94" y="-58.42"/>
 </segment>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
@@ -18849,6 +18986,15 @@ not on standard Arduino IDE(?)</text>
 <wire x1="160.02" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
 <label x="165.1" y="12.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SPK_L" gate="G$1" pin="2"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="33.02" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -18895,7 +19041,7 @@ not on standard Arduino IDE(?)</text>
 <junction x="63.5" y="81.28"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="VDD"/>
+<pinref part="TLC5917ID" gate="A" pin="VDD"/>
 <wire x1="134.62" y1="-45.72" x2="132.08" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="G$1" pin="3.3V"/>
 <wire x1="132.08" y1="-45.72" x2="132.08" y2="-43.18" width="0.1524" layer="91"/>
@@ -18927,7 +19073,7 @@ not on standard Arduino IDE(?)</text>
 </segment>
 <segment>
 <pinref part="P+13" gate="G$1" pin="3.3V"/>
-<pinref part="LED7-LB" gate="G$1" pin="1"/>
+<pinref part="LED7-FREE" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="-76.2" x2="223.52" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18956,12 +19102,7 @@ not on standard Arduino IDE(?)</text>
 <wire x1="223.52" y1="-15.24" x2="218.44" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+18" gate="G$1" pin="3.3V"/>
-<pinref part="LED_CREE" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="-17.78" x2="152.4" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$4" gate="G$1" pin="VDD"/>
+<pinref part="LM4871" gate="G$1" pin="VDD"/>
 <pinref part="P+3" gate="G$1" pin="3.3V"/>
 <junction x="-22.86" y="-30.48"/>
 <pinref part="C6" gate="G$1" pin="1"/>
@@ -18977,6 +19118,10 @@ not on standard Arduino IDE(?)</text>
 <pinref part="U$5" gate="G$1" pin="C1"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VDD"/>
+<pinref part="P+4" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="RXD" class="0">
 <segment>
@@ -18988,6 +19133,11 @@ not on standard Arduino IDE(?)</text>
 <wire x1="170.18" y1="88.9" x2="185.42" y2="88.9" width="0.1524" layer="91"/>
 <label x="170.18" y="88.9" size="1.778" layer="95"/>
 <pinref part="FTDI" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="UART_TX"/>
+<wire x1="-124.46" y1="-86.36" x2="-124.46" y2="-101.6" width="0.1524" layer="91"/>
+<label x="-124.46" y="-101.6" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TXD" class="0">
@@ -19001,6 +19151,11 @@ not on standard Arduino IDE(?)</text>
 <label x="170.18" y="86.36" size="1.778" layer="95"/>
 <pinref part="FTDI" gate="G$1" pin="5"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="UART_RX"/>
+<wire x1="-121.92" y1="-86.36" x2="-121.92" y2="-101.6" width="0.1524" layer="91"/>
+<label x="-121.92" y="-101.6" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -19008,6 +19163,8 @@ not on standard Arduino IDE(?)</text>
 <wire x1="83.82" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <label x="73.66" y="86.36" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<junction x="73.66" y="86.36"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
@@ -19017,7 +19174,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT0"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT0"/>
 <wire x1="175.26" y1="-45.72" x2="185.42" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-45.72" x2="185.42" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -19030,14 +19187,14 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT1"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT1"/>
 <wire x1="175.26" y1="-48.26" x2="187.96" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT2"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT2"/>
 <wire x1="175.26" y1="-50.8" x2="187.96" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="-50.8" x2="187.96" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
@@ -19045,7 +19202,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT3"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT3"/>
 <wire x1="175.26" y1="-53.34" x2="185.42" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-53.34" x2="185.42" y2="-78.74" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -19054,7 +19211,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT4"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT4"/>
 <wire x1="175.26" y1="-55.88" x2="180.34" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-55.88" x2="180.34" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-38.1" x2="213.36" y2="-38.1" width="0.1524" layer="91"/>
@@ -19067,7 +19224,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT5"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT5"/>
 <wire x1="175.26" y1="-58.42" x2="182.88" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-58.42" x2="182.88" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-40.64" x2="213.36" y2="-40.64" width="0.1524" layer="91"/>
@@ -19077,7 +19234,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT6"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT6"/>
 <wire x1="175.26" y1="-60.96" x2="182.88" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-60.96" x2="182.88" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-68.58" x2="213.36" y2="-68.58" width="0.1524" layer="91"/>
@@ -19087,7 +19244,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OUT7"/>
+<pinref part="TLC5917ID" gate="A" pin="~OUT7"/>
 <wire x1="175.26" y1="-63.5" x2="180.34" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-63.5" x2="180.34" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="-71.12" x2="213.36" y2="-71.12" width="0.1524" layer="91"/>
@@ -19097,7 +19254,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="LED_OE" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="~OE(ED2)"/>
+<pinref part="TLC5917ID" gate="A" pin="~OE(ED2)"/>
 <wire x1="134.62" y1="-63.5" x2="119.38" y2="-63.5" width="0.1524" layer="91"/>
 <label x="119.38" y="-63.5" size="1.778" layer="95"/>
 </segment>
@@ -19109,7 +19266,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="LED_LE" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="LE(ED1)"/>
+<pinref part="TLC5917ID" gate="A" pin="LE(ED1)"/>
 <wire x1="134.62" y1="-60.96" x2="119.38" y2="-60.96" width="0.1524" layer="91"/>
 <label x="119.38" y="-60.96" size="1.778" layer="95"/>
 </segment>
@@ -19126,7 +19283,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="LED_CLK" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="CLK"/>
+<pinref part="TLC5917ID" gate="A" pin="CLK"/>
 <wire x1="134.62" y1="-53.34" x2="119.38" y2="-53.34" width="0.1524" layer="91"/>
 <label x="119.38" y="-53.34" size="1.778" layer="95"/>
 </segment>
@@ -19161,11 +19318,6 @@ not on standard Arduino IDE(?)</text>
 <wire x1="-127" y1="45.72" x2="-111.76" y2="45.72" width="0.1524" layer="91"/>
 <label x="-124.46" y="45.72" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="132.08" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="134.62" y="83.82" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="CHG_DONE" class="0">
 <segment>
@@ -19174,11 +19326,6 @@ not on standard Arduino IDE(?)</text>
 <wire x1="-111.76" y1="43.18" x2="-139.7" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="43.18" x2="-139.7" y2="50.8" width="0.1524" layer="91"/>
 <label x="-124.46" y="43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PC2(ADC2)"/>
-<wire x1="132.08" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
-<label x="134.62" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHG_STAT1" class="0">
@@ -19239,13 +19386,13 @@ not on standard Arduino IDE(?)</text>
 <pinref part="IC1" gate="G$1" pin="VBAT1"/>
 <wire x1="-68.58" y1="38.1" x2="-68.58" y2="35.56" width="0.1524" layer="91"/>
 <label x="-63.5" y="33.02" size="1.778" layer="95"/>
-<pinref part="JP_BATT" gate="G$1" pin="1"/>
 <wire x1="-68.58" y1="33.02" x2="-33.02" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-68.58" y="33.02"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-33.02" y1="33.02" x2="-15.24" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="22.86" x2="-33.02" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-33.02" y="33.02"/>
+<pinref part="JBATT" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -19256,30 +19403,23 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="AMB_IN" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
-<wire x1="132.08" y1="86.36" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
-<label x="134.62" y="86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$5" gate="G$1" pin="E1"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="261.62" y1="81.28" x2="251.46" y2="81.28" width="0.1524" layer="91"/>
-<junction x="261.62" y="81.28"/>
+<wire x1="266.7" y1="81.28" x2="251.46" y2="81.28" width="0.1524" layer="91"/>
+<junction x="266.7" y="81.28"/>
 <label x="251.46" y="78.74" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="CHG_STAT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
-<wire x1="132.08" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
-<label x="134.62" y="78.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$33" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="ADC6"/>
 <wire x1="132.08" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
 <label x="134.62" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="C" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
+<wire x1="132.08" y1="78.74" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<label x="134.62" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -19338,7 +19478,7 @@ not on standard Arduino IDE(?)</text>
 <wire x1="177.8" y1="33.02" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="SDI"/>
+<pinref part="TLC5917ID" gate="A" pin="SDI"/>
 <wire x1="134.62" y1="-50.8" x2="119.38" y2="-50.8" width="0.1524" layer="91"/>
 <label x="119.38" y="-50.8" size="1.778" layer="95"/>
 </segment>
@@ -19399,7 +19539,9 @@ not on standard Arduino IDE(?)</text>
 <pinref part="IC1" gate="G$1" pin="CE"/>
 <wire x1="-111.76" y1="27.94" x2="-119.38" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-119.38" y1="27.94" x2="-119.38" y2="35.56" width="0.1524" layer="91"/>
-<label x="-119.38" y="35.56" size="1.778" layer="95"/>
+<label x="-127" y="35.56" size="1.778" layer="95"/>
+<wire x1="-127" y1="35.56" x2="-119.38" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-119.38" y="35.56"/>
 </segment>
 <segment>
 <wire x1="-116.84" y1="76.2" x2="-116.84" y2="73.66" width="0.1524" layer="91"/>
@@ -19416,6 +19558,11 @@ not on standard Arduino IDE(?)</text>
 <label x="-160.02" y="71.12" size="1.778" layer="95"/>
 <wire x1="-160.02" y1="68.58" x2="-160.02" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-160.02" y="68.58"/>
+</segment>
+<segment>
+<pinref part="LED_CREE" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="-17.78" x2="152.4" y2="-17.78" width="0.1524" layer="91"/>
+<label x="144.78" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -19604,7 +19751,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$56" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="R-EXT"/>
+<pinref part="TLC5917ID" gate="A" pin="R-EXT"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -19634,7 +19781,7 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$61" class="0">
 <segment>
-<pinref part="LED7-LB" gate="G$1" pin="2"/>
+<pinref part="LED7-FREE" gate="G$1" pin="2"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -19674,28 +19821,16 @@ not on standard Arduino IDE(?)</text>
 <pinref part="R24" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$69" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="UART_TX"/>
-<wire x1="-124.46" y1="-86.36" x2="-124.46" y2="-96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$70" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="UART_RX"/>
-<wire x1="-121.92" y1="-86.36" x2="-121.92" y2="-96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$74" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="BYPASS"/>
+<pinref part="LM4871" gate="G$1" pin="BYPASS"/>
 <wire x1="-27.94" y1="-50.8" x2="-22.86" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$75" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="IN+"/>
+<pinref part="LM4871" gate="G$1" pin="IN+"/>
 <pinref part="RF_L" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="-35.56" x2="-38.1" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="RI_L" gate="G$1" pin="2"/>
@@ -19709,7 +19844,7 @@ not on standard Arduino IDE(?)</text>
 <segment>
 <pinref part="RF_L" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="-25.4" x2="-38.1" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="V02"/>
+<pinref part="LM4871" gate="G$1" pin="V02"/>
 <pinref part="CO_L" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="-43.18" x2="22.86" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-43.18" x2="22.86" y2="-27.94" width="0.1524" layer="91"/>
@@ -19723,7 +19858,7 @@ not on standard Arduino IDE(?)</text>
 <segment>
 <pinref part="RF_R" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="-68.58" x2="-38.1" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="V01"/>
+<pinref part="LM4871" gate="G$1" pin="V01"/>
 <pinref part="CO_R" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="-45.72" x2="22.86" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-45.72" x2="22.86" y2="-58.42" width="0.1524" layer="91"/>
@@ -19738,22 +19873,12 @@ not on standard Arduino IDE(?)</text>
 <wire x1="-43.18" y1="-76.2" x2="-30.48" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-43.18" y="-76.2" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="-76.2" x2="2.54" y2="-76.2" width="0.1524" layer="91"/>
-<label x="-10.16" y="-76.2" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SPKR_R+" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="-30.48" y1="-78.74" x2="-43.18" y2="-78.74" width="0.1524" layer="91"/>
 <label x="-43.18" y="-78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-78.74" x2="-10.16" y2="-78.74" width="0.1524" layer="91"/>
-<label x="-10.16" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPKR_L-" class="0">
@@ -19762,22 +19887,12 @@ not on standard Arduino IDE(?)</text>
 <wire x1="-43.18" y1="-81.28" x2="-30.48" y2="-81.28" width="0.1524" layer="91"/>
 <label x="-43.18" y="-81.28" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="3"/>
-<wire x1="-10.16" y1="-81.28" x2="2.54" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-10.16" y="-81.28" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SPKR_R-" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="4"/>
 <wire x1="-30.48" y1="-83.82" x2="-43.18" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-43.18" y="-83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP4" gate="G$1" pin="4"/>
-<wire x1="2.54" y1="-83.82" x2="-10.16" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-10.16" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MIC_R-" class="0">
@@ -19787,9 +19902,12 @@ not on standard Arduino IDE(?)</text>
 <label x="-43.18" y="-86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="5"/>
-<wire x1="-10.16" y1="-86.36" x2="2.54" y2="-86.36" width="0.1524" layer="91"/>
-<label x="-10.16" y="-86.36" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="MIC_R-"/>
+<wire x1="-86.36" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-83.82" x2="-76.2" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-83.82" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-71.12" y="-83.82" size="1.778" layer="95"/>
+<pinref part="MIC_R" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MIC_L-" class="0">
@@ -19799,9 +19917,12 @@ not on standard Arduino IDE(?)</text>
 <label x="-43.18" y="-88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="6"/>
-<wire x1="2.54" y1="-88.9" x2="-10.16" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-10.16" y="-88.9" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="MIC_L-"/>
+<wire x1="-71.12" y1="-60.96" x2="-86.36" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-68.58" x2="-71.12" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-68.58" x2="-71.12" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-71.12" y="-68.58" size="1.778" layer="95"/>
+<pinref part="MIC_L" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MIC_R+" class="0">
@@ -19811,9 +19932,12 @@ not on standard Arduino IDE(?)</text>
 <label x="-43.18" y="-91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="7"/>
-<wire x1="-10.16" y1="-91.44" x2="2.54" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-10.16" y="-91.44" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="MIC_R+"/>
+<wire x1="-86.36" y1="-63.5" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-81.28" x2="-73.66" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-81.28" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-71.12" y="-81.28" size="1.778" layer="95"/>
+<pinref part="MIC_R" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MIC_L+" class="0">
@@ -19823,14 +19947,15 @@ not on standard Arduino IDE(?)</text>
 <label x="-43.18" y="-93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="G$1" pin="8"/>
-<wire x1="-10.16" y1="-93.98" x2="2.54" y2="-93.98" width="0.1524" layer="91"/>
-<label x="-10.16" y="-93.98" size="1.778" layer="95"/>
+<pinref part="U$3" gate="G$1" pin="MIC_L+"/>
+<wire x1="-86.36" y1="-66.04" x2="-55.88" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-71.12" y="-66.04" size="1.778" layer="95"/>
+<pinref part="MIC_L" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$71" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="IN-"/>
+<pinref part="LM4871" gate="G$1" pin="IN-"/>
 <pinref part="RF_R" gate="G$1" pin="2"/>
 <wire x1="-22.86" y1="-45.72" x2="-38.1" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-45.72" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
@@ -19919,31 +20044,22 @@ not on standard Arduino IDE(?)</text>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="SPK_R" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="-58.42" x2="30.48" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-58.42" x2="30.48" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="CO_R" gate="G$1" pin="2"/>
-<label x="30.48" y="-58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="SPK_L" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="-27.94" x2="38.1" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="CO_L" gate="G$1" pin="2"/>
-<label x="30.48" y="-27.94" size="1.778" layer="95"/>
+<pinref part="SPK_R" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$80" class="0">
 <segment>
 <pinref part="PWR_BUTTON" gate="G$1" pin="2"/>
 <wire x1="-129.54" y1="83.82" x2="-124.46" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="JP_SOLAR" gate="G$1" pin="1"/>
 <wire x1="-147.32" y1="86.36" x2="-139.7" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VBUS"/>
 <wire x1="-149.86" y1="93.98" x2="-147.32" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="93.98" x2="-147.32" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-147.32" y1="93.98" x2="-129.54" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="93.98" x2="-129.54" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="JSOLAR" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SW_TL" class="0">
@@ -19952,12 +20068,22 @@ not on standard Arduino IDE(?)</text>
 <wire x1="195.58" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
 <label x="185.42" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
+<wire x1="132.08" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
+<label x="134.62" y="58.42" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SW_TR" class="0">
 <segment>
 <pinref part="SW_TR" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="35.56" x2="185.42" y2="35.56" width="0.1524" layer="91"/>
 <label x="185.42" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
+<wire x1="132.08" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="134.62" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW_BFF" class="0">
@@ -20026,20 +20152,6 @@ not on standard Arduino IDE(?)</text>
 <label x="134.62" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SIG_LEFT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="132.08" y1="58.42" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
-<label x="134.62" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SIG_RIGHT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD3(INT1)"/>
-<wire x1="132.08" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
-<label x="134.62" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BT_DISC" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD4(XCK/T0)"/>
@@ -20052,6 +20164,132 @@ not on standard Arduino IDE(?)</text>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="17.78" x2="165.1" y2="17.78" width="0.1524" layer="91"/>
 <label x="165.1" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO2" class="0">
+<segment>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-76.2" x2="2.54" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-10.16" y="-76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO3" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO3"/>
+<wire x1="-149.86" y1="-43.18" x2="-167.64" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-167.64" y="-43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="-78.74" x2="-10.16" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-10.16" y="-78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO4" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO4"/>
+<wire x1="-167.64" y1="-45.72" x2="-149.86" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-167.64" y="-45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="3"/>
+<wire x1="-10.16" y1="-81.28" x2="2.54" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-10.16" y="-81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO5" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO5"/>
+<wire x1="-149.86" y1="-48.26" x2="-167.64" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-167.64" y="-48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="4"/>
+<wire x1="2.54" y1="-83.82" x2="-10.16" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-10.16" y="-83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO6" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO6"/>
+<wire x1="-167.64" y1="-50.8" x2="-149.86" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-167.64" y="-50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="5"/>
+<wire x1="-10.16" y1="-86.36" x2="2.54" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-10.16" y="-86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO7" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO7"/>
+<wire x1="-149.86" y1="-53.34" x2="-167.64" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-167.64" y="-53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="6"/>
+<wire x1="2.54" y1="-88.9" x2="-10.16" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-10.16" y="-88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO10" class="0">
+<segment>
+<pinref part="JP4" gate="G$1" pin="8"/>
+<wire x1="-10.16" y1="-93.98" x2="2.54" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-10.16" y="-93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO10"/>
+<wire x1="-167.64" y1="-58.42" x2="-149.86" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-167.64" y="-58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BT_GPIO9" class="0">
+<segment>
+<pinref part="JP4" gate="G$1" pin="7"/>
+<wire x1="-10.16" y1="-91.44" x2="2.54" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-10.16" y="-91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="SPK_L" gate="G$1" pin="1"/>
+<pinref part="CO_L" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="-27.94" x2="40.64" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="2"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="142.24" y1="-20.32" x2="139.7" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED_CREE" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC0(ADC0)"/>
+<wire x1="132.08" y1="86.36" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
+<label x="134.62" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q1" gate="G$1" pin="B"/>
+<wire x1="121.92" y1="-25.4" x2="134.62" y2="-25.4" width="0.1524" layer="91"/>
+<label x="121.92" y="-25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="132.08" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
+<label x="134.62" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="B" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PC2(ADC2)"/>
+<wire x1="132.08" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<label x="134.62" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
