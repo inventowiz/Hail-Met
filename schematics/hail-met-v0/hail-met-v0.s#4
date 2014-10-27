@@ -20010,6 +20010,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="246.38" y1="-83.82" x2="251.46" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="10.16" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<label x="10.16" y="40.64" size="1.778" layer="95"/>
+<pinref part="JP-BT3" gate="G$1" pin="4"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -20170,6 +20175,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="AND-GATE" gate="A" pin="VCC"/>
 <wire x1="292.1" y1="50.8" x2="309.88" y2="50.8" width="0.1524" layer="91"/>
 <label x="292.1" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="-83.82" x2="33.02" y2="-83.82" width="0.1524" layer="91"/>
+<label x="17.78" y="-83.82" size="1.778" layer="95"/>
+<pinref part="JP-BT2" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -21200,18 +21210,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="17.78" y1="-81.28" x2="33.02" y2="-81.28" width="0.1524" layer="91"/>
 <label x="17.78" y="-81.28" size="1.778" layer="95"/>
 <pinref part="JP-BT2" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="VDD" class="0">
-<segment>
-<wire x1="17.78" y1="-83.82" x2="33.02" y2="-83.82" width="0.1524" layer="91"/>
-<label x="17.78" y="-83.82" size="1.778" layer="95"/>
-<pinref part="JP-BT2" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="10.16" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
-<label x="10.16" y="40.64" size="1.778" layer="95"/>
-<pinref part="JP-BT3" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$14" class="0">

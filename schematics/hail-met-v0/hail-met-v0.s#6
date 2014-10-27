@@ -19710,13 +19710,13 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <instance part="GND36" gate="1" x="309.88" y="20.32"/>
 <instance part="LED_DONE" gate="G$1" x="269.24" y="-50.8" rot="R180"/>
 <instance part="R14" gate="G$1" x="256.54" y="-53.34" rot="R180"/>
-<instance part="GND37" gate="1" x="251.46" y="-55.88"/>
+<instance part="GND37" gate="1" x="246.38" y="-55.88"/>
 <instance part="LED_LB" gate="G$1" x="269.24" y="-66.04" rot="R180"/>
 <instance part="R15" gate="G$1" x="256.54" y="-68.58" rot="R180"/>
-<instance part="GND38" gate="1" x="251.46" y="-71.12"/>
+<instance part="GND38" gate="1" x="246.38" y="-71.12"/>
 <instance part="LED_CHG" gate="G$1" x="269.24" y="-81.28" rot="R180"/>
 <instance part="R24" gate="G$1" x="256.54" y="-83.82" rot="R180"/>
-<instance part="GND39" gate="1" x="251.46" y="-86.36"/>
+<instance part="GND39" gate="1" x="246.38" y="-86.36"/>
 </instances>
 <busses>
 </busses>
@@ -19996,14 +19996,17 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="246.38" y1="-53.34" x2="251.46" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="GND38" gate="1" pin="GND"/>
+<wire x1="246.38" y1="-68.58" x2="251.46" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="GND39" gate="1" pin="GND"/>
+<wire x1="246.38" y1="-83.82" x2="251.46" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -21384,6 +21387,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="345.44" y1="50.8" x2="363.22" y2="50.8" width="0.1524" layer="91"/>
 <label x="347.98" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED_DONE" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="-50.8" x2="261.62" y2="-50.8" width="0.1524" layer="91"/>
+<label x="243.84" y="-50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="STAT12" class="0">
 <segment>
@@ -21408,6 +21416,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="AND-GATE" gate="A" pin="3Y"/>
 <wire x1="345.44" y1="45.72" x2="363.22" y2="45.72" width="0.1524" layer="91"/>
 <label x="347.98" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED_LB" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="-66.04" x2="261.62" y2="-66.04" width="0.1524" layer="91"/>
+<label x="243.84" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHG_PG" class="0">
@@ -21437,6 +21450,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="345.44" y1="43.18" x2="363.22" y2="43.18" width="0.1524" layer="91"/>
 <label x="347.98" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED_CHG" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="-81.28" x2="261.62" y2="-81.28" width="0.1524" layer="91"/>
+<label x="243.84" y="-81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="~CHG_PG" class="0">
 <segment>
@@ -21454,23 +21472,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <segment>
 <pinref part="LED_DONE" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="LED_DONE" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="-50.8" x2="261.62" y2="-50.8" width="0.1524" layer="91"/>
-<label x="248.92" y="-50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED_LB" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="-66.04" x2="261.62" y2="-66.04" width="0.1524" layer="91"/>
-<label x="248.92" y="-66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED_CHG" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="-81.28" x2="261.62" y2="-81.28" width="0.1524" layer="91"/>
-<label x="248.92" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$24" class="0">

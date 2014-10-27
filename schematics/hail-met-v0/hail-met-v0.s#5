@@ -19404,6 +19404,7 @@ wave soldering</description>
 <part name="LED_CHG" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="R24" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
+<part name="JP-BT3" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -19717,6 +19718,7 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <instance part="LED_CHG" gate="G$1" x="269.24" y="-81.28" rot="R180"/>
 <instance part="R24" gate="G$1" x="256.54" y="-83.82" rot="R180"/>
 <instance part="GND39" gate="1" x="246.38" y="-86.36"/>
+<instance part="JP-BT3" gate="G$1" x="30.48" y="45.72" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -20014,6 +20016,19 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="ATM_PWR" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="-20.32" x2="73.66" y2="-20.32" width="0.1524" layer="91"/>
 <label x="60.96" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="25.4" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<label x="10.16" y="45.72" size="1.778" layer="95"/>
+<pinref part="JP-BT3" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="IN"/>
+<label x="0" y="91.44" size="1.778" layer="95"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="0" y1="91.44" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
+<junction x="2.54" y="91.44"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -21085,12 +21100,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </net>
 <net name="CHG_VOUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IN"/>
-<label x="0" y="91.44" size="1.778" layer="95"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="ATM_PWR" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
 <label x="60.96" y="-17.78" size="1.778" layer="95"/>
@@ -21103,6 +21112,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="-68.58" y1="48.26" x2="-53.34" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-68.58" y="48.26"/>
 </segment>
+<segment>
+<wire x1="10.16" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+<label x="10.16" y="48.26" size="1.778" layer="95"/>
+<pinref part="JP-BT3" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="EXT_5V" class="0">
 <segment>
@@ -21114,6 +21128,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="EXT_PWR_JACK" gate="G$1" pin="1"/>
 <wire x1="-43.18" y1="86.36" x2="-30.48" y2="86.36" width="0.1524" layer="91"/>
 <label x="-43.18" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="43.18" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
+<label x="10.16" y="43.18" size="1.778" layer="95"/>
+<pinref part="JP-BT3" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="DEV_EN" class="0">
@@ -21188,6 +21207,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="17.78" y1="-83.82" x2="33.02" y2="-83.82" width="0.1524" layer="91"/>
 <label x="17.78" y="-83.82" size="1.778" layer="95"/>
 <pinref part="JP-BT2" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<label x="10.16" y="40.64" size="1.778" layer="95"/>
+<pinref part="JP-BT3" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="N$14" class="0">
