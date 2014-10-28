@@ -19669,7 +19669,6 @@ wave soldering</description>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
 <part name="RF_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
 <part name="RF_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
-<part name="JP-BT0" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
 <part name="CI_L" library="adafruit" deviceset="C-US" device="C0805K"/>
 <part name="CI_R" library="adafruit" deviceset="C-US" device="C0805K"/>
 <part name="NTC_THERM" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
@@ -19978,7 +19977,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <instance part="C6" gate="G$1" x="-30.48" y="-33.02"/>
 <instance part="RF_R" gate="G$1" x="-38.1" y="-58.42" rot="R90"/>
 <instance part="RF_L" gate="G$1" x="-38.1" y="-30.48" rot="R90"/>
-<instance part="JP-BT0" gate="G$1" x="-25.4" y="-83.82" rot="R180"/>
 <instance part="CI_L" gate="G$1" x="-60.96" y="-38.1" rot="R270"/>
 <instance part="CI_R" gate="G$1" x="-60.96" y="-50.8" rot="R270"/>
 <instance part="NTC_THERM" gate="G$1" x="-40.64" y="22.86" rot="R180"/>
@@ -20338,16 +20336,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
 <pinref part="NOT-GATE" gate="A" pin="GND"/>
-</segment>
-<segment>
-<pinref part="JP-BT0" gate="G$1" pin="3"/>
-<wire x1="-43.18" y1="-81.28" x2="-30.48" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-43.18" y="-81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP-BT0" gate="G$1" pin="4"/>
-<wire x1="-30.48" y1="-83.82" x2="-43.18" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-43.18" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -21048,11 +21036,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </net>
 <net name="SPKR_L+" class="0">
 <segment>
-<pinref part="JP-BT0" gate="G$1" pin="1"/>
-<wire x1="-43.18" y1="-76.2" x2="-30.48" y2="-76.2" width="0.1524" layer="91"/>
-<label x="-43.18" y="-76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="CI_L" gate="G$1" pin="2"/>
 <wire x1="-66.04" y1="-38.1" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-38.1" x2="-68.58" y2="-43.18" width="0.1524" layer="91"/>
@@ -21062,11 +21045,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </segment>
 </net>
 <net name="SPKR_R+" class="0">
-<segment>
-<pinref part="JP-BT0" gate="G$1" pin="2"/>
-<wire x1="-30.48" y1="-78.74" x2="-43.18" y2="-78.74" width="0.1524" layer="91"/>
-<label x="-43.18" y="-78.74" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="SPKR_R+"/>
 <wire x1="-86.36" y1="-45.72" x2="-68.58" y2="-45.72" width="0.1524" layer="91"/>
@@ -21078,11 +21056,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </net>
 <net name="MIC_R-" class="0">
 <segment>
-<pinref part="JP-BT0" gate="G$1" pin="5"/>
-<wire x1="-43.18" y1="-86.36" x2="-30.48" y2="-86.36" width="0.1524" layer="91"/>
-<label x="-43.18" y="-86.36" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="MIC_R-"/>
 <wire x1="-86.36" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-83.82" x2="-76.2" y2="-83.82" width="0.1524" layer="91"/>
@@ -21092,11 +21065,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </segment>
 </net>
 <net name="MIC_L-" class="0">
-<segment>
-<pinref part="JP-BT0" gate="G$1" pin="6"/>
-<wire x1="-30.48" y1="-88.9" x2="-43.18" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-43.18" y="-88.9" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="MIC_L-"/>
 <wire x1="-71.12" y1="-60.96" x2="-86.36" y2="-60.96" width="0.1524" layer="91"/>
@@ -21108,11 +21076,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </net>
 <net name="MIC_R+" class="0">
 <segment>
-<pinref part="JP-BT0" gate="G$1" pin="7"/>
-<wire x1="-43.18" y1="-91.44" x2="-30.48" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-43.18" y="-91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="MIC_R+"/>
 <wire x1="-86.36" y1="-63.5" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-81.28" x2="-73.66" y2="-81.28" width="0.1524" layer="91"/>
@@ -21122,11 +21085,6 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 </segment>
 </net>
 <net name="MIC_L+" class="0">
-<segment>
-<pinref part="JP-BT0" gate="G$1" pin="8"/>
-<wire x1="-43.18" y1="-93.98" x2="-30.48" y2="-93.98" width="0.1524" layer="91"/>
-<label x="-43.18" y="-93.98" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="MIC_L+"/>
 <wire x1="-86.36" y1="-66.04" x2="-55.88" y2="-66.04" width="0.1524" layer="91"/>

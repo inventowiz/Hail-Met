@@ -19511,9 +19511,9 @@ PD3</text>
 to batteries</text>
 <text x="2.54" y="96.52" size="1.778" layer="94">Voltage regulator for microcontroller</text>
 <text x="81.28" y="-33.02" size="1.778" layer="94">LED Driver</text>
-<wire x1="-187.96" y1="104.14" x2="-187.96" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-187.96" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="-187.96" y1="104.14" x2="-187.96" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-187.96" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="104.14" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="104.14" x2="-187.96" y2="104.14" width="0.1524" layer="94"/>
 <text x="-139.7" y="99.06" size="1.778" layer="94">Power input (USB, Solar)</text>
 <text x="-58.42" y="5.08" size="1.778" layer="91" align="bottom-right">No Thermistor:</text>
@@ -19526,10 +19526,10 @@ to batteries</text>
 <text x="-111.76" y="71.12" size="1.778" layer="91" distance="5">NEED TO SET THIS TO VREG.
 For 6V solar panel, use 1KOhm / 1KOhm</text>
 <text x="15.24" y="63.5" size="1.778" layer="91">DONE</text>
-<wire x1="-2.54" y1="101.6" x2="60.96" y2="101.6" width="0.1524" layer="94"/>
-<wire x1="60.96" y1="101.6" x2="60.96" y2="58.42" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="94"/>
+<wire x1="60.96" y1="104.14" x2="60.96" y2="58.42" width="0.1524" layer="94"/>
 <wire x1="60.96" y1="58.42" x2="-2.54" y2="58.42" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="58.42" x2="-2.54" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="58.42" x2="-2.54" y2="104.14" width="0.1524" layer="94"/>
 <text x="12.7" y="60.96" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
 <text x="-162.56" y="0" size="1.778" layer="91" align="bottom-right">Design:
@@ -19646,9 +19646,9 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="223.52" y1="-101.6" x2="304.8" y2="-101.6" width="0.1524" layer="94"/>
 <wire x1="304.8" y1="-101.6" x2="304.8" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="304.8" y1="-7.62" x2="223.52" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="55.88" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="60.96" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="60.96" y1="-2.54" x2="60.96" y2="55.88" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="55.88" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="60.96" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="60.96" y1="-5.08" x2="60.96" y2="55.88" width="0.1524" layer="94"/>
 <wire x1="60.96" y1="55.88" x2="-2.54" y2="55.88" width="0.1524" layer="94"/>
 <text x="10.16" y="50.8" size="1.778" layer="94">Breakout for ATmega328P</text>
 </plain>
