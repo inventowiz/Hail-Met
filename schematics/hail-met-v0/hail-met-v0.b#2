@@ -3363,14 +3363,24 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.1524" layer="16">
 <vertex x="56.642" y="3.9624"/>
 <vertex x="63.5762" y="10.8966"/>
-<vertex x="70.739" y="10.668"/>
-<vertex x="71.3994" y="11.3284"/>
-<vertex x="71.3486" y="15.4432"/>
+<vertex x="66.929" y="10.668"/>
+<vertex x="67.5894" y="11.3284"/>
+<vertex x="67.5386" y="17.9832"/>
 <vertex x="62.992" y="23.7998"/>
 <vertex x="58.4962" y="23.7998"/>
 <vertex x="52.0192" y="17.3228"/>
 <vertex x="52.0192" y="6.8326"/>
 <vertex x="54.8894" y="3.9624"/>
+</polygon>
+<polygon width="0.254" layer="16">
+<vertex x="53.2638" y="5.842"/>
+<vertex x="53.2638" y="2.3368"/>
+<vertex x="54.4068" y="1.1938"/>
+<vertex x="57.3532" y="1.1938"/>
+<vertex x="58.2676" y="2.1082"/>
+<vertex x="58.2676" y="6.1722"/>
+<vertex x="57.531" y="6.9088"/>
+<vertex x="54.3306" y="6.9088"/>
 </polygon>
 </signal>
 <signal name="N$18">
@@ -3622,7 +3632,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U1" pad="9"/>
 <wire x1="50.571" y1="18.339" x2="50.571" y2="18.771" width="0.8128" layer="1"/>
 <wire x1="50.571" y1="18.771" x2="49.8602" y2="19.4818" width="0.8128" layer="1"/>
-<wire x1="49.8602" y1="19.4818" x2="24.39" y2="39.8526" width="0" layer="19" extent="1-16"/>
+<wire x1="24.39" y1="39.8526" x2="49.8602" y2="19.4818" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC1">
 <contactref element="U1" pad="24"/>

@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/Ben/Hail-Met/schematics/hail-met-v0/hail-met-v0.brd
+Job           : C:/Users/Brian/Desktop/Classes/F14/473/Hail-Met/schematics/hail-met-v0/hail-met-v0.brd
 
-Start at      : 17:57:13 (10/27/2014)
-End at        : 19:45:58 (10/27/2014)
-Elapsed time  : 00:06:15
+Start at      : 13:53:50 (10/29/2014)
+End at        : 13:54:26 (10/29/2014)
+Elapsed time  : 00:00:36
 
 Signals       :   109   RoutingGrid: 6 mil  Layers: 2
-Connections   :   254   predefined:  105 ( 11 Vias )
+Connections   :   254   predefined:  157 ( 30 Vias )
 
 Router memory :   1455872
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:05:43  00:00:07  00:00:07  00:00:06  00:00:06  00:00:06
-Number of Ripups  :         0         3         0         0         0         0
-max. Level        :         0         2         0         0         0         0
-max. Total        :         0         9         0         0         0         0
+Time per pass     :  00:00:00  00:00:21  00:00:04  00:00:04  00:00:03  00:00:04
+Number of Ripups  :         0       100         0         0         0         0
+max. Level        :         0         1         0         0         0         0
+max. Total        :         0         3         0         0         0         0
 
-Routed            :        65       147       147       147       147       147
-Vias              :         0        56        61        55        50        50
-Resolution        :    66.9 %    99.2 %    99.2 %    99.2 %    99.2 %    99.2 %
+Routed            :        10        96        96        96        96        96
+Vias              :         0       144        76        52        48        48
+Resolution        :    65.7 %    99.6 %    99.6 %    99.6 %    99.6 %    99.6 %
 
-Final             : 91.3% finished. Polygons may have fallen apart.
+Final             : 92.6% finished. Polygons may have fallen apart.
