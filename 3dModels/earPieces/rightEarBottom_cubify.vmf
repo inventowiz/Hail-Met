@@ -1,0 +1,17 @@
+Part Extents:
+27.2458 <= x <= 112.454
+24.8806 <= y <= 114.819
+0.0001 <= z <= 10.5001
+6870 output triangles
+6870 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+1 distinct shell:
+Shell volume: 33756.6	(num triangles: 6870)
+27.2458 <= x <= 112.454
+24.8806 <= y <= 114.819
+0.0001 <= z <= 10.5001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\earPieces\rightEarBottom_cubify.stl was GOOD
