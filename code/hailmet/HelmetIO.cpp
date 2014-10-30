@@ -1,5 +1,6 @@
 #include "HelmetIO.h"
 
+
 // Bits that represent lights
 // MSB
 // 7 - Right Front
@@ -55,11 +56,17 @@ void HelmetIO::updateLights() {
 }
 
 void HelmetIO::enableHeadlight() {
-  headlight = true; 
+  headlight = true;
+  analogWrite(PIN_HEADLIGHT, headlightBrightness);
 }
 
 void HelmetIO::disableHeadlight() {
   headlight = false;
+  digitalWrite(PIN_HEADLIGHT, LOW);
+}
+
+void HelmetIO::setHeadlightBrightness(int brightness){
+  headlightBrightness = brightness;
 }
 
 void HelmetIO::enableTaillight() {

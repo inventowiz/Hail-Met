@@ -16,6 +16,8 @@
 #define PIN_BT_CONNECTED 7
 #define PIN_LIGHT_SENSOR A0
 
+#define HEADLIGHT_MIN_BRIGHTNESS 25
+
 RN52 bt;
 LedDriver ledDriver;
 HelmetIO helmet;
@@ -78,13 +80,13 @@ void handleBtStateChange() {
 }
 
 void setup() {
-  pinMode(PIN_SIGNAL_LEFT, INPUT);
+  pinMode(PIN_SIGNAL_LEFT, INPUT);            // Initialize Left Turn Signal Button
   digitalWrite(PIN_SIGNAL_LEFT, HIGH);
 
-  pinMode(PIN_SIGNAL_RIGHT, INPUT);
+  pinMode(PIN_SIGNAL_RIGHT, INPUT);            // Initialize Right Turn Signal Button
   digitalWrite(PIN_SIGNAL_RIGHT, HIGH);
 
-  signalLeft.attach(PIN_SIGNAL_LEFT);
+  signalLeft.attach(PIN_SIGNAL_LEFT);        // Attach turn signal interrupts
   signalRight.attach(PIN_SIGNAL_RIGHT);
   setBtDiscoverable.attach(PIN_BT_DISCOVERABLE);
 
@@ -92,10 +94,10 @@ void setup() {
   signalRight.interval(20);
   setBtDiscoverable.interval(20);
   
-  pinMode(PIN_BT_CONNECTED, OUTPUT);
+  pinMode(PIN_BT_CONNECTED, OUTPUT);          // Initialize Bluetooth Connected LED
   digitalWrite(PIN_BT_CONNECTED, LOW);
   
-  pinMode(PIN_BT_EVENT_CHANGE, INPUT);
+  pinMode(PIN_BT_EVENT_CHANGE, INPUT);          // Initialize Bluetooth Event Change Button
   digitalWrite(PIN_BT_EVENT_CHANGE, HIGH);
   PCintPort::attachInterrupt(PIN_BT_EVENT_CHANGE, &btStateChanged, FALLING);
   
@@ -130,6 +132,7 @@ void loop() {
   ledDriver.setBrightness(max(255 - lightSensorVal, 30));
   
   if (lightSensorVal < 50) {
+    helmet.setHeadlightBrightness(max(HEADLIGHT_MIN_BRIGHTNESS, lightSensorVal));
     helmet.enableHeadlight();
   } else {
     helmet.disableHeadlight();
