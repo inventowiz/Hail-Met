@@ -46,6 +46,7 @@ void HelmetIO::init(LedDriver &ledDriver) {
   this->ledDriver = &ledDriver;
   leftSignalsActive = 0;
   rightSignalsActive = 0;
+  headlightBrightness = 255;
   
   this->ledDriver->write(0);
 }

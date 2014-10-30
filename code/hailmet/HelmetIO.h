@@ -10,11 +10,10 @@ class HelmetIO {
   private:
     LedDriver *ledDriver;
     bool headlight, taillight, leftSignal, rightSignal;
+    int headlightBrightness;  // [0,255], Represents brightness of headlight (pwm value)
     char leftSignalsActive, rightSignalsActive;
    
     char generateLedStates();
-    
-    int headlightBrightness = 255;  // [0,255], Represents brightness of headlight (pwm value)
     
   public:
   
