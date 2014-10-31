@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -2904,7 +2904,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R27" library="SparkFun-Passives" package="0805" value="1K" x="46.3042" y="30.2514" rot="R270"/>
 <element name="R28" library="SparkFun-Passives" package="0805" value="1K" x="53.2384" y="30.2768" rot="R270"/>
 <element name="JP_GND" library="SparkFun-Connectors" package="1X03_LOCK" value="" x="74.5236" y="32.893" rot="R270"/>
-<element name="C9" library="adafruit" package="C0805K" value="10uF" x="1.5748" y="-8.255"/>
+<element name="C9" library="adafruit" package="C0805K" value="10uF" x="70.1294" y="25.019"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3170,7 +3170,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="64.9986" y="36.576"/>
 </polygon>
 <contactref element="C9" pad="2"/>
-<wire x1="1.27" y1="6.35" x2="2.5748" y2="-8.255" width="0" layer="19" extent="1-1"/>
+<wire x1="71.1294" y1="25.019" x2="73.9234" y2="27.813" width="1.27" layer="1"/>
+<wire x1="73.9234" y1="27.813" x2="74.6506" y2="27.813" width="1.27" layer="1"/>
 <wire x1="74.6506" y1="27.813" x2="74.3966" y2="30.353" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
@@ -4251,7 +4252,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="59.4426" y1="20.812" x2="60.4426" y2="21.812" width="0.3048" layer="1"/>
 <wire x1="59.436" y1="20.8026" x2="59.436" y2="21.5138" width="0.3048" layer="1"/>
 <contactref element="C9" pad="1"/>
-<wire x1="59.436" y1="20.8026" x2="0.5748" y2="-8.255" width="0" layer="19" extent="1-1"/>
+<wire x1="69.1294" y1="25.019" x2="69.723" y2="25.6126" width="1.016" layer="1"/>
+<wire x1="69.723" y1="25.6126" x2="69.723" y2="27.94" width="1.016" layer="1"/>
 </signal>
 <signal name="EXT_5V">
 <contactref element="EXT_PWR_JACK" pad="1"/>

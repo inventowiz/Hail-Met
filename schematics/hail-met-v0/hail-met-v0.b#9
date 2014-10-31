@@ -3516,7 +3516,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="AT_PINS" pad="3"/>
 <wire x1="17.2974" y1="35.96" x2="14.6876" y2="35.96" width="0.254" layer="1"/>
 <wire x1="14.6876" y1="35.96" x2="14.224" y2="36.4236" width="0.254" layer="1"/>
-<wire x1="14.224" y1="36.4236" x2="12.9286" y2="36.4236" width="0.2032" layer="1"/>
+<wire x1="14.224" y1="36.4236" x2="12.9286" y2="36.4236" width="0.254" layer="1"/>
 <wire x1="12.9286" y1="36.4236" x2="12.2428" y2="36.4236" width="0.254" layer="1"/>
 <wire x1="12.2428" y1="36.4236" x2="10.9728" y2="37.6936" width="0.254" layer="1"/>
 </signal>
@@ -4156,11 +4156,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PC1">
 <contactref element="U1" pad="24"/>
 <contactref element="AT_PINS" pad="5"/>
-<wire x1="17.2974" y1="32.76" x2="15.3476" y2="32.76" width="0.254" layer="1"/>
-<wire x1="15.3476" y1="32.76" x2="14.2494" y2="33.8582" width="0.254" layer="1"/>
-<wire x1="14.2494" y1="33.8582" x2="12.8016" y2="33.8582" width="0.2032" layer="1"/>
-<wire x1="12.8016" y1="33.8582" x2="12.2682" y2="33.8582" width="0.254" layer="1"/>
-<wire x1="12.2682" y1="33.8582" x2="10.9728" y2="35.1536" width="0.254" layer="1"/>
+<wire x1="17.2974" y1="32.76" x2="16.008" y2="32.76" width="0.254" layer="1"/>
+<wire x1="16.008" y1="32.76" x2="15.748" y2="33.02" width="0.254" layer="1"/>
+<via x="15.748" y="33.02" extent="1-16" drill="0.3302" shape="octagon"/>
+<wire x1="15.748" y1="33.02" x2="14.9098" y2="33.8582" width="0.254" layer="16"/>
+<wire x1="14.9098" y1="33.8582" x2="12.2682" y2="33.8582" width="0.254" layer="16"/>
+<wire x1="12.2682" y1="33.8582" x2="10.9728" y2="35.1536" width="0.254" layer="16"/>
 </signal>
 <signal name="BT_VOL_UP">
 <contactref element="U$3" pad="GPIO5"/>

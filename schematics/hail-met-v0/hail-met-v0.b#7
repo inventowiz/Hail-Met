@@ -146,7 +146,7 @@
 <wire x1="0" y1="60.95" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="0" y1="60.95" x2="77.14" y2="60.95" x3="38.57" y3="68.58" textsize="1.778" layer="21" unit="inch"/>
 <dimension x1="77.14" y1="60.95" x2="77.47" y2="0" x3="100.157453125" y3="30.59873125" textsize="1.778" layer="21" unit="inch"/>
-<text x="48.26" y="55.88" size="0.8128" layer="25" rot="R90" align="top-right">VDD
+<text x="67.0814" y="60.4012" size="0.8128" layer="25" rot="R90" align="top-right">VDD
 GND
 INT
 SYNC
@@ -2899,7 +2899,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R15" pad="2"/>
 <contactref element="R24" pad="2"/>
 <contactref element="JP-BT3" pad="4"/>
-<contactref element="AT_PINS" pad="8"/>
 <contactref element="AT_PINS" pad="6"/>
 <polygon width="0.254" layer="1" rank="3">
 <vertex x="47.2186" y="26.4922"/>
@@ -2926,7 +2925,6 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 <contactref element="NOT-GATE" pad="4"/>
 <contactref element="R25" pad="2"/>
-<wire x1="13.5128" y1="35.1536" x2="13.5128" y2="32.6136" width="0.8128" layer="1"/>
 <polygon width="0.254" layer="1">
 <vertex x="44.577" y="1.5748"/>
 <vertex x="42.1386" y="1.5748"/>
@@ -3077,6 +3075,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="77.5208" y="61.1378"/>
 <vertex x="72.0598" y="61.1378"/>
 </polygon>
+<contactref element="AT_PINS" pad="3"/>
 <wire x1="74.3966" y1="30.353" x2="74.6506" y2="27.813" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
@@ -3569,12 +3568,11 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="AREF">
 <contactref element="U1" pad="20"/>
-<contactref element="AT_PINS" pad="3"/>
 <wire x1="17.2974" y1="35.96" x2="14.6876" y2="35.96" width="0.254" layer="1"/>
 <wire x1="14.6876" y1="35.96" x2="14.224" y2="36.4236" width="0.254" layer="1"/>
-<wire x1="14.224" y1="36.4236" x2="12.9286" y2="36.4236" width="0.254" layer="1"/>
-<wire x1="12.9286" y1="36.4236" x2="12.2428" y2="36.4236" width="0.254" layer="1"/>
-<wire x1="12.2428" y1="36.4236" x2="10.9728" y2="37.6936" width="0.254" layer="1"/>
+<wire x1="14.224" y1="36.4236" x2="12.2428" y2="36.4236" width="0.254" layer="1"/>
+<contactref element="AT_PINS" pad="5"/>
+<wire x1="12.2428" y1="36.4236" x2="10.9728" y2="35.1536" width="0.254" layer="1"/>
 </signal>
 <signal name="AMB_IN">
 <contactref element="U$5" pad="EMITTER"/>
@@ -4240,13 +4238,14 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PC1">
 <contactref element="U1" pad="24"/>
-<contactref element="AT_PINS" pad="5"/>
 <wire x1="17.2974" y1="32.76" x2="16.008" y2="32.76" width="0.254" layer="1"/>
 <wire x1="16.008" y1="32.76" x2="15.748" y2="33.02" width="0.254" layer="1"/>
 <via x="15.748" y="33.02" extent="1-16" drill="0.3302" shape="octagon"/>
 <wire x1="15.748" y1="33.02" x2="14.9098" y2="33.8582" width="0.254" layer="16"/>
 <wire x1="14.9098" y1="33.8582" x2="12.2682" y2="33.8582" width="0.254" layer="16"/>
-<wire x1="12.2682" y1="33.8582" x2="10.9728" y2="35.1536" width="0.254" layer="16"/>
+<contactref element="AT_PINS" pad="7"/>
+<wire x1="12.2682" y1="33.8582" x2="12.2174" y2="33.8582" width="0.2032" layer="16"/>
+<wire x1="12.2174" y1="33.8582" x2="10.9728" y2="32.6136" width="0.254" layer="16"/>
 </signal>
 <signal name="BT_VOL_UP">
 <contactref element="U$3" pad="GPIO5"/>
@@ -4342,9 +4341,9 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PC2">
 <contactref element="U1" pad="25"/>
-<contactref element="AT_PINS" pad="7"/>
-<wire x1="18.79" y1="31.2674" x2="12.319" y2="31.2674" width="0.254" layer="1"/>
-<wire x1="12.319" y1="31.2674" x2="10.9728" y2="32.6136" width="0.254" layer="1"/>
+<contactref element="AT_PINS" pad="8"/>
+<wire x1="18.79" y1="31.2674" x2="14.859" y2="31.2674" width="0.2032" layer="1"/>
+<wire x1="14.859" y1="31.2674" x2="13.5128" y2="32.6136" width="0.2032" layer="1"/>
 </signal>
 <signal name="~CHG_STAT1">
 <contactref element="AND-GATE" pad="4"/>
@@ -4458,17 +4457,17 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$22">
 <contactref element="LED_DONE" pad="2"/>
 <contactref element="R14" pad="1"/>
-<wire x1="57.15" y1="53.075" x2="57.15" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="57.15" y1="53.075" x2="57.15" y2="50.8" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="LED_LB" pad="2"/>
 <contactref element="R15" pad="1"/>
-<wire x1="62.23" y1="53.075" x2="62.23" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="50.8" x2="62.23" y2="53.075" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$30">
 <contactref element="LED_CHG" pad="2"/>
 <contactref element="R24" pad="1"/>
-<wire x1="67.31" y1="53.075" x2="67.31" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="67.31" y1="50.8" x2="67.31" y2="53.075" width="0.4064" layer="1"/>
 </signal>
 <signal name="ADC7">
 <contactref element="AT_PINS" pad="4"/>

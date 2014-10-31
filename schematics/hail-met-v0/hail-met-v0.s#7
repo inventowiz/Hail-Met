@@ -19728,6 +19728,12 @@ wave soldering</description>
 <part name="AT_PINS" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
 <part name="NOT-GATE" library="Texas Instruments_By_element14_Batch_1" deviceset="SN74AUP3G04DQER" device=""/>
 <part name="D2" library="adafruit" deviceset="DIODE" device="SOD-123"/>
+<part name="LED_BTCONN" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="R25" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="GND40" library="SparkFun" deviceset="GND" device=""/>
+<part name="R26" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
+<part name="R27" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
+<part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -19774,16 +19780,16 @@ Validate:</text>
 <text x="215.9" y="66.04" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
 <wire x1="53.34" y1="-7.62" x2="220.98" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="220.98" y1="-7.62" x2="220.98" y2="-101.6" width="0.1524" layer="94"/>
-<wire x1="220.98" y1="-101.6" x2="53.34" y2="-101.6" width="0.1524" layer="94"/>
-<wire x1="53.34" y1="-101.6" x2="53.34" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="220.98" y1="-7.62" x2="220.98" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="220.98" y1="-106.68" x2="53.34" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="53.34" y1="-106.68" x2="53.34" y2="-7.62" width="0.1524" layer="94"/>
 <text x="-160.02" y="2.54" size="1.778" layer="91">Done, need VCC resistor check</text>
 <wire x1="-187.96" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="50.8" y1="-7.62" x2="50.8" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="50.8" y1="-106.68" x2="-187.96" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="-187.96" y1="-106.68" x2="-187.96" y2="-7.62" width="0.1524" layer="94"/>
 <text x="-185.42" y="-10.16" size="1.778" layer="94">Bluetooth</text>
-<text x="101.6" y="-93.98" size="1.778" layer="91">Note: Pin headers used so wires can be soldered
+<text x="93.98" y="-96.52" size="1.778" layer="91">Note: Pin headers used so wires can be soldered
 directly to board. Design decision based on cost
 and weight of the helmet.</text>
 <text x="180.34" y="-43.18" size="1.778" layer="91">Names:
@@ -19873,9 +19879,9 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <text x="165.1" y="25.4" size="1.778" layer="94">D13</text>
 <text x="162.56" y="43.18" size="1.778" layer="94">x</text>
 <text x="243.84" y="-10.16" size="1.778" layer="94">Logic for charge status LEDs</text>
-<wire x1="223.52" y1="-7.62" x2="223.52" y2="-101.6" width="0.1524" layer="94"/>
-<wire x1="223.52" y1="-101.6" x2="304.8" y2="-101.6" width="0.1524" layer="94"/>
-<wire x1="304.8" y1="-101.6" x2="304.8" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="223.52" y1="-7.62" x2="223.52" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="223.52" y1="-106.68" x2="304.8" y2="-106.68" width="0.1524" layer="94"/>
+<wire x1="304.8" y1="-106.68" x2="304.8" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="304.8" y1="-7.62" x2="223.52" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="55.88" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="-5.08" x2="60.96" y2="-5.08" width="0.1524" layer="94"/>
@@ -19899,9 +19905,9 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <instance part="GND6" gate="1" x="68.58" y="-71.12"/>
 <instance part="P+2" gate="G$1" x="68.58" y="-43.18"/>
 <instance part="GND7" gate="1" x="-116.84" y="50.8"/>
-<instance part="PWR" gate="G$1" x="-198.12" y="35.56" rot="R270"/>
-<instance part="DONE" gate="G$1" x="-198.12" y="53.34" rot="R270"/>
-<instance part="CHRG/LBO" gate="G$1" x="-198.12" y="71.12" rot="R270"/>
+<instance part="PWR" gate="G$1" x="-142.24" y="50.8"/>
+<instance part="DONE" gate="G$1" x="-160.02" y="48.26"/>
+<instance part="CHRG/LBO" gate="G$1" x="-177.8" y="45.72"/>
 <instance part="GND8" gate="1" x="-147.32" y="81.28"/>
 <instance part="C3" gate="G$1" x="-93.98" y="91.44"/>
 <instance part="GND9" gate="1" x="-93.98" y="83.82" rot="MR0"/>
@@ -20036,6 +20042,12 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <instance part="AT_PINS" gate="G$1" x="30.48" y="12.7"/>
 <instance part="NOT-GATE" gate="A" x="264.16" y="-27.94"/>
 <instance part="D2" gate="G$1" x="-147.32" y="88.9" rot="R90"/>
+<instance part="LED_BTCONN" gate="G$1" x="205.74" y="-96.52" rot="R180"/>
+<instance part="R25" gate="G$1" x="193.04" y="-99.06" rot="R180"/>
+<instance part="GND40" gate="1" x="182.88" y="-101.6"/>
+<instance part="R26" gate="G$1" x="-177.8" y="58.42" rot="R90"/>
+<instance part="R27" gate="G$1" x="-160.02" y="58.42" rot="R90"/>
+<instance part="R28" gate="G$1" x="-142.24" y="58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20337,6 +20349,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="GND35" gate="1" pin="GND"/>
 <pinref part="NOT-GATE" gate="A" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+<wire x1="182.88" y1="-99.06" x2="187.96" y2="-99.06" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VIN" class="0">
 <segment>
@@ -20482,6 +20499,15 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <label x="-170.18" y="76.2" size="1.778" layer="95"/>
 <wire x1="-170.18" y1="73.66" x2="-170.18" y2="76.2" width="0.1524" layer="91"/>
 <junction x="-170.18" y="73.66"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="-142.24" y1="63.5" x2="-160.02" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="-160.02" y1="63.5" x2="-177.8" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-160.02" y="63.5"/>
+<junction x="-177.8" y="63.5"/>
+<wire x1="-170.18" y1="73.66" x2="-177.8" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="73.66" x2="-177.8" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="246.38" y1="-22.86" x2="228.6" y2="-22.86" width="0.1524" layer="91"/>
@@ -20708,6 +20734,9 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <label x="-127" y="40.64" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="-170.18" y1="63.5" x2="-170.18" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="CHRG/LBO" gate="G$1" pin="C"/>
+<wire x1="-177.8" y1="40.64" x2="-170.18" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-170.18" y="40.64"/>
 </segment>
 </net>
 <net name="CHG_STAT2" class="0">
@@ -20726,7 +20755,10 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <wire x1="-152.4" y1="43.18" x2="-111.76" y2="43.18" width="0.1524" layer="91"/>
 <label x="-127" y="43.18" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="DONE" gate="G$1" pin="C"/>
 <wire x1="-152.4" y1="43.18" x2="-152.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="43.18" x2="-152.4" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-152.4" y="43.18"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -20797,6 +20829,11 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="U1" gate="G$1" pin="PD7(AIN1)"/>
 <wire x1="142.24" y1="43.18" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
 <label x="144.78" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED_BTCONN" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="-96.52" x2="198.12" y2="-96.52" width="0.1524" layer="91"/>
+<label x="180.34" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BT_EVENT" class="0">
@@ -21535,6 +21572,9 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <label x="-127" y="45.72" size="1.778" layer="95"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-134.62" y1="45.72" x2="-134.62" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="45.72" x2="-134.62" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-134.62" y="45.72"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="CHG_CHARGING" class="0">
@@ -21608,6 +21648,32 @@ en/DeviceDoc/rn-52-ds-1.1r.pdf</text>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-147.32" y1="86.36" x2="-139.7" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JSOLAR" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="LED_BTCONN" gate="G$1" pin="2"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="CHRG/LBO" gate="G$1" pin="A"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="-177.8" y1="48.26" x2="-177.8" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="DONE" gate="G$1" pin="A"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="-160.02" y1="50.8" x2="-160.02" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="PWR" gate="G$1" pin="A"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
