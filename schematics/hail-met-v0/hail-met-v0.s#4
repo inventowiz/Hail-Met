@@ -20369,6 +20369,8 @@ wave soldering</description>
 <part name="R27" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="R28" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="JP_GND" library="SparkFun-Connectors" deviceset="M03" device="LOCK"/>
+<part name="C9" library="adafruit" deviceset="C-US" device="C0805K" value="10uF"/>
+<part name="GND41" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20695,6 +20697,8 @@ circuit to board.</text>
 <instance part="R27" gate="G$1" x="-160.02" y="58.42" rot="R90"/>
 <instance part="R28" gate="G$1" x="-142.24" y="58.42" rot="R90"/>
 <instance part="JP_GND" gate="G$1" x="55.88" y="25.4" rot="R180"/>
+<instance part="C9" gate="G$1" x="-60.96" y="45.72"/>
+<instance part="GND41" gate="1" x="-60.96" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -21024,6 +21028,10 @@ circuit to board.</text>
 <pinref part="AT_PINS" gate="G$1" pin="3"/>
 <wire x1="27.94" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <label x="27.94" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="GND41" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -21905,8 +21913,11 @@ circuit to board.</text>
 <pinref part="IC1" gate="G$1" pin="OUT2"/>
 <wire x1="-68.58" y1="45.72" x2="-68.58" y2="48.26" width="0.1524" layer="91"/>
 <label x="-53.34" y="48.26" size="1.778" layer="95"/>
-<wire x1="-68.58" y1="48.26" x2="-53.34" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="48.26" x2="-60.96" y2="48.26" width="0.1524" layer="91"/>
 <junction x="-68.58" y="48.26"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="48.26" x2="-53.34" y2="48.26" width="0.1524" layer="91"/>
+<junction x="-60.96" y="48.26"/>
 </segment>
 <segment>
 <wire x1="33.02" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
@@ -22350,12 +22361,6 @@ circuit to board.</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,-203.2,35.56,PWR,C,,,,"/>
-<approved hash="101,1,-195.58,35.56,PWR,A,,,,"/>
-<approved hash="101,1,-203.2,53.34,DONE,C,,,,"/>
-<approved hash="101,1,-195.58,53.34,DONE,A,,,,"/>
-<approved hash="101,1,-203.2,71.12,CHRG/LBO,C,,,,"/>
-<approved hash="101,1,-195.58,71.12,CHRG/LBO,A,,,,"/>
 <approved hash="104,1,-91.44,12.7,IC1,GND1,GND,,,"/>
 <approved hash="104,1,-88.9,12.7,IC1,GND2,GND,,,"/>
 <approved hash="104,1,71.12,-45.72,TLC5917ID,VDD,3.3V,,,"/>
@@ -22386,6 +22391,36 @@ circuit to board.</text>
 <approved hash="206,1,-68.58,35.56,VBATT,,,,,"/>
 <approved hash="206,1,-68.58,33.02,VBATT,,,,,"/>
 <approved hash="206,1,-68.58,38.1,VBATT,,,,,"/>
+<approved hash="110,1,-152.4,63.5,3.3V,CHG_STAT2,,,,"/>
+<approved hash="110,1,-170.18,63.5,3.3V,CHG_STAT1,,,,"/>
+<approved hash="111,1,-170.18,63.5,3.3V,,,,,"/>
+<approved hash="111,1,-152.4,63.5,3.3V,,,,,"/>
+<approved hash="113,1,66.04,-56.8748,R1,,,,,"/>
+<approved hash="113,1,129.54,-34.0148,R2,,,,,"/>
+<approved hash="113,1,129.54,-49.2548,R10,,,,,"/>
+<approved hash="113,1,129.54,-64.4948,R16,,,,,"/>
+<approved hash="113,1,129.54,-79.7348,R17,,,,,"/>
+<approved hash="113,1,154.94,-79.7348,R18,,,,,"/>
+<approved hash="113,1,154.94,-64.4948,R19,,,,,"/>
+<approved hash="113,1,154.94,-49.2548,R20,,,,,"/>
+<approved hash="113,1,154.94,-34.0148,R21,,,,,"/>
+<approved hash="113,1,221.657,88.7053,FTDI,,,,,"/>
+<approved hash="113,1,129.54,-18.7748,R22,,,,,"/>
+<approved hash="113,1,154.94,-18.7748,R23,,,,,"/>
+<approved hash="113,1,257.217,86.1653,MPU-6050,,,,,"/>
+<approved hash="113,1,-14.9571,35.6912,JBATT,,,,,"/>
+<approved hash="113,1,-133.519,94.1112,JSOLAR,,,,,"/>
+<approved hash="113,1,-55.6429,-63.3688,MIC_L,,,,,"/>
+<approved hash="113,1,-55.6429,-81.1488,MIC_R,,,,,"/>
+<approved hash="113,1,70.4935,-25.1037,Q1,,,,,"/>
+<approved hash="113,1,36.2373,-81.4747,JP-BT2,,,,,"/>
+<approved hash="113,1,3.21733,-81.4747,JP-BT1,,,,,"/>
+<approved hash="113,1,193.04,-54.3348,R14,,,,,"/>
+<approved hash="113,1,193.04,-69.5748,R15,,,,,"/>
+<approved hash="113,1,193.04,-84.8148,R24,,,,,"/>
+<approved hash="113,1,51.4773,40.4453,JP-BT3,,,,,"/>
+<approved hash="113,1,193.04,-100.055,R25,,,,,"/>
+<approved hash="113,1,51.4773,23.9353,JP_GND,,,,,"/>
 </errors>
 </schematic>
 </drawing>
