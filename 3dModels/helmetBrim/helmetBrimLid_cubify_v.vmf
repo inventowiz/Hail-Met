@@ -1,0 +1,17 @@
+Part Extents:
+26.9593 <= x <= 133.209
+19.2873 <= y <= 139.122
+0.0001 <= z <= 2.0001
+3034 output triangles
+3034 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+1 distinct shell:
+Shell volume: 11788.8	(num triangles: 3034)
+26.9593 <= x <= 133.209
+19.2873 <= y <= 139.122
+0.0001 <= z <= 2.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\helmetBrim\helmetBrimLid_cubify_v.stl was GOOD

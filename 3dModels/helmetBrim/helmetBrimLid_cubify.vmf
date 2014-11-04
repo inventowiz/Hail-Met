@@ -1,6 +1,6 @@
 Part Extents:
-10.877 <= x <= 128.822
-14.9149 <= y <= 124.787
+36.4527 <= x <= 103.247
+-0.0228424 <= y <= 139.723
 0.0001 <= z <= 2.0001
 3034 output triangles
 3034 input triangles
@@ -11,7 +11,7 @@ Part Extents:
 0 unmatched triangle sides
 1 distinct shell:
 Shell volume: 11788.8	(num triangles: 3034)
-10.877 <= x <= 128.822
-14.9149 <= y <= 124.787
+36.4527 <= x <= 103.247
+-0.0228424 <= y <= 139.723
 0.0001 <= z <= 2.0001
-C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\helmetBrimLid_cubify.stl was GOOD
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\helmetBrim\helmetBrimLid_cubify.stl was GOOD
