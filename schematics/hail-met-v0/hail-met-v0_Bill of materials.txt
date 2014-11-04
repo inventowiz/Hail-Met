@@ -1,0 +1,111 @@
+Part	Value	Device	Package	Description	$$	##		Digikey prt
+AND-GATE	SN74ALVC08PWR	SN74ALVC08PWR	SOP65P640X120-14N	QUADRUPLE 2-INPUT POSITIVE-AND GATE			0	
+AT_PINS	M04X2	M04X2	2X4	".1"" header, two rows of four."				
+C1	0.1uF	CAP0805	805	Capacitor				
+C2	0.1uF	C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+C3	4700uF	CPOL-USE5-13	E5-13	"POLARIZED CAPACITOR, American symbol"				
+C4	10uF	C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+C5	10uF	C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+C6	0.1uF	C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+C7	10uF	CAP0805	805	Capacitor				
+C8	22pF	CAP0805	805	Capacitor				
+C9	10uF	C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+C10		CAP_POLPTH1	CPOL-RADIAL-100UF-25V	Capacitor Polarized				
+C11		CAP_POLPTH1	CPOL-RADIAL-100UF-25V	Capacitor Polarized				
+C12		CAP_POLPTH1	CPOL-RADIAL-100UF-25V	Capacitor Polarized				
+C13		CAP_POLPTH1	CPOL-RADIAL-100UF-25V	Capacitor Polarized				
+C14		CAP_POLPTH1	CPOL-RADIAL-100UF-25V	Capacitor Polarized				
+CHRG/LBO	ORANGE	LEDCHIP-LED0805	CHIP-LED0805	LED				
+CI_L		C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+CI_R		C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+CO_L		C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+CO_R		C-USC0805K	C0805K	"CAPACITOR, American symbol"				
+D2		DIODESOD-123	SOD-123	Diode				
+DONE	GREEN	LEDCHIP-LED0805	CHIP-LED0805	LED				
+EXT_PWR_JACK	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+FTDI		M06LOCK	1X06_LOCK	Header 6				
+IC1	MCP73871	MCP73871	QFN20					
+J1	AVR_SPI_PRG_6PTH	AVR_SPI_PRG_6PTH	2X3	AVR ISP 6 Pin				
+JBATT		JST_2PIN-SMT	JST-PH-2-SMT	JST 2-Pin Connectors of various flavors				
+JP-BT1		M04LOCK	1X04_LOCK	Header 4				
+JP-BT2		M04LOCK	1X04_LOCK	Header 4				
+JP-BT3		M04LOCK	1X04_LOCK	Header 4				
+JP_GND		M03LOCK	1X03_LOCK	Header 3				
+JSOLAR		JST_2PIN-SMT	JST-PH-2-SMT	JST 2-Pin Connectors of various flavors				
+LED0-IL	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED0-LF	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED1-LM	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED2-LR	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED3-HR	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED4-IR	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED4-RF	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED5-RM	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED6-RR	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED7-CS	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED_BTCONN	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED_CHG	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED_CREE	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED_DONE	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LED_LB	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+LM4871	LM4871	LM4871	SO08					
+MIC_L		JST_2PIN-SMT	JST-PH-2-SMT	JST 2-Pin Connectors of various flavors				
+MIC_R		JST_2PIN-SMT	JST-PH-2-SMT	JST 2-Pin Connectors of various flavors				
+MPU-6050		M08LOCK	1X08_LOCK	Header 8				
+NOT-GATE	SN74AUP3G04DQER	SN74AUP3G04DQER	SON35P100X140X40-8N	LOW-POWER TRIPLE INVERTER GATE				
+NTC_THERM	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+PWR	RED	LEDCHIP-LED0805	CHIP-LED0805	LED				
+PWR_BUTTON	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+Q1		TRANSISTOR_NPNSOT23-3	SOT23-3	Transistor NPN				
+R1		RESISTOR0805-RES	805	Resistor				
+R2		RESISTOR0805-RES	805	Resistor				
+R3		RESISTOR0805-RES	805	Resistor				
+R4		RESISTOR0805-RES	805	Resistor				
+R5	10K	RESISTOR0805-RES	805	Resistor				
+R6	10K	RESISTOR0805-RES	805	Resistor				
+R7	2K	RESISTOR0805-RES	805	Resistor				
+R8	240	RESISTOR0805-RES	805	Resistor				
+R9	390	RESISTOR0805-RES	805	Resistor				
+R10		RESISTOR0805-RES	805	Resistor				
+R11	100K	RESISTOR0805-RES	805	Resistor				
+R12	10k	RESISTOR0805-RES	805	Resistor				
+R13	10K	RESISTOR0805-RES	805	Resistor				
+R14		RESISTOR0805-RES	805	Resistor				
+R15		RESISTOR0805-RES	805	Resistor				
+R16		RESISTOR0805-RES	805	Resistor				
+R17		RESISTOR0805-RES	805	Resistor				
+R18		RESISTOR0805-RES	805	Resistor				
+R19		RESISTOR0805-RES	805	Resistor				
+R20		RESISTOR0805-RES	805	Resistor				
+R21		RESISTOR0805-RES	805	Resistor				
+R22		RESISTOR0805-RES	805	Resistor				
+R23		RESISTOR0805-RES	805	Resistor				
+R24		RESISTOR0805-RES	805	Resistor				
+R25		RESISTOR0805-RES	805	Resistor				
+R26	1K	RESISTOR0805-RES	805	Resistor				
+R27	1K	RESISTOR0805-RES	805	Resistor				
+R28	1K	RESISTOR0805-RES	805	Resistor				
+R29	10K	RESISTOR0805-RES	805	Resistor				
+RF_L	20k	RESISTOR0805-RES	805	Resistor				
+RF_R	20k	RESISTOR0805-RES	805	Resistor				
+RI_L	20k	RESISTOR0805-RES	805	Resistor				
+RI_R	20k	RESISTOR0805-RES	805	Resistor				
+RT1		RESISTOR0805-RES	805	Resistor				
+RT2		RESISTOR0805-RES	805	Resistor				
+SPK_L		JST_2PIN-SMT	JST-PH-2-SMT	JST 2-Pin Connectors of various flavors				
+SPK_R		JST_2PIN-SMT	JST-PH-2-SMT	JST 2-Pin Connectors of various flavors				
+SW_CALL	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_DISC	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_NEXT	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_PLAY	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_PREV	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_TL	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_TR	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_VDN	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+SW_VUP	M02PTH	M02PTH	1X02	"Standard 2-pin 0.1"" header. Use with"				
+TLC5917ID	TLC5917ID	TLC5917ID	SOIC127P600X175-16N	8-CHANNEL CONSTANT-CURRENT LED SINK DRIVERS				
+U$1	V_REG_317SMD	V_REG_317SMD	SOT223	Voltage Regulator				
+U$2	10118193	10118193	609-4616-1-ND	Micro USB B Jack for Surface Mount				
+U$3	RN52	RN52	RN52	RN-52 Bluetooth Module				
+U$5	TEMT6000	TEMT6000	TEMT6000-SEN	Ambient Light Sensor				
+U1	ATMEGA328P	ATMEGA328_SMT	TQFP32-08	32-Pin Atmega328 part				
+Y1	16MHZ	RESONATOR16MHZ	RESONATOR-SMD	Resonator				
