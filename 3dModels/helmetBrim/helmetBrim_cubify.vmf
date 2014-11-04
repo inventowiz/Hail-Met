@@ -1,0 +1,17 @@
+Part Extents:
+28.1622 <= x <= 111.538
+-6.71294 <= y <= 146.413
+0.0001 <= z <= 15.0001
+15294 output triangles
+15342 input triangles
+48 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+1 distinct shell:
+Shell volume: 62301	(num triangles: 15294)
+28.1622 <= x <= 111.538
+-6.71294 <= y <= 146.413
+0.0001 <= z <= 15.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\helmetBrim_cubify.stl was BAD
