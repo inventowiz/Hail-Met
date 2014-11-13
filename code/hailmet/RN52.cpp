@@ -5,8 +5,10 @@ void RN52::updateConnectionStatus() {
   int val;
   char inChar;
 
+  enterCommandMode();
   serial->print("Q\r");
   String res = waitForResponse();
+  exitCommandMode();
 
   prevState = state;
 
@@ -65,11 +67,11 @@ bool RN52::exitCommandMode() {
   return !(isInCommandMode());
 }
 
-String RN52::waitForSerial(int length) {
-  String ret = "";
-  int waitLength = length;
-
-  return ret;
+void RN52::sendCommand(String str) {
+  enterCommandMode();
+  serial->print(str);
+  waitForResponse();
+  exitCommandMode();
 }
 
 String RN52::waitForResponse() {
@@ -81,63 +83,55 @@ bool RN52::isDiscoverable() {
 }
 
 void RN52::setDiscoverable(bool discoverable) {
-  enterCommandMode();
   if (discoverable) {
-    serial->print("@,1\r");
+    sendCommand("@,1\r");
   } else {
-    serial->print("@,0\r");
+    sendCommand("@,0\r");
   }
-  waitForResponse();
-  exitCommandMode();
 }
 
 void RN52::attemptReconnect() {
-  serial->print("B\r");
-  waitForResponse();
+  sendCommand("B\r");
 }
 
 void RN52::disconnect() {
-  serial->print("K,E");
-  waitForResponse();
+  sendCommand("K,E");
 }
 
 bool RN52::incomingCall() {
-  return state.connectionStatus == 11;
+  return state.connectionStatus == 5;
 }
 
 void RN52::acceptCall() {
-  serial->print("C\r");
-  waitForResponse();
+  sendCommand("C\r");
 }
 
 void RN52::rejectCall() {
-  serial->print("E\r");
-  waitForResponse();
+  sendCommand("E\r");
 }
 
 void RN52::increaseVolume() {
-  serial->print("AV+\r");
-  waitForResponse();
+  sendCommand("AV+\r");
 }
 
 void RN52::decreaseVolume() {
-  serial->print("AV-\r");
-  waitForResponse();
+  sendCommand("AV-\r");
 }
 
 void RN52::nextTrack() {
-  serial->print("AT+\r");
-  waitForResponse();
+  sendCommand("AT+\r");
 }
 
 void RN52::previousTrack() {
-  serial->print("AT-\r");
-  waitForResponse();
+  sendCommand("AT-\r");
 }
 
 void RN52::playPause() {
-  serial->print("AP\r");
-  waitForResponse();
+  sendCommand("AP\r");
+}
+
+void RN52::activateVoiceCommand() {
+  sendCommand("P\r");
 }
 
 int RN52::getConnectionStatus() {

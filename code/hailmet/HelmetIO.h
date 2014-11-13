@@ -26,8 +26,10 @@ class HelmetIO {
     void disableTaillight();
     void enableLeftTurnSignal();
     void disableLeftTurnSignal();
+    bool getLeftTurnSignal();
     void enableRightTurnSignal();
     void disableRightTurnSignal();
+    bool getRightTurnSignal();
 };
 
 #endif

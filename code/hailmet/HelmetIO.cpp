@@ -75,7 +75,7 @@ void HelmetIO::enableTaillight() {
 }
 
 void HelmetIO::disableTaillight() {
-  taillight = true;
+  taillight = false;
 }
 
 void HelmetIO::enableLeftTurnSignal() {
@@ -87,6 +87,10 @@ void HelmetIO::disableLeftTurnSignal() {
   leftSignal = false;
 }
 
+bool HelmetIO::getLeftTurnSignal() {
+  return leftSignal;
+}
+
 void HelmetIO::enableRightTurnSignal() {
   rightSignal = true;
 }
@@ -94,4 +98,8 @@ void HelmetIO::enableRightTurnSignal() {
 void HelmetIO::disableRightTurnSignal() {
   rightSignalsActive = 0;
   rightSignal = false;
+}
+
+bool HelmetIO::getRightTurnSignal() {
+  return rightSignal;
 }

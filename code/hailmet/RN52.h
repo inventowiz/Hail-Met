@@ -60,14 +60,11 @@ class RN52 {
 
     int ASCIIToNum(char c);
 
-    // This function will wait for a serial response of the specified length
-    // not including the length of the terminating string (if any) and return
-    // the response (again, not including the terminating string)
-    String waitForSerial(int length);
-
     // This function will wait for a serial response that ends with the
     // termination character
     String waitForResponse();
+    
+    void sendCommand(String str);
 
   public:
     // This will configure the RN52 properly, rebooting if
@@ -104,6 +101,7 @@ class RN52 {
     void nextTrack();
     void previousTrack();
     void playPause();
+    void activateVoiceCommand();
 
     int getConnectionStatus();
     bool isInCommandMode();
