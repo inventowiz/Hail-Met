@@ -1,0 +1,25 @@
+Part Extents:
+27.6416 <= x <= 112.058
+15.4626 <= y <= 124.237
+0.0001 <= z <= 15.0001
+15864 output triangles
+15864 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+3 distinct shells:
+Shell volume: 20940.6	(num triangles: 5788)
+53.1477 <= x <= 107.589
+15.4626 <= y <= 70.47
+0.0001 <= z <= 15.0001
+Shell volume: 22600.6	(num triangles: 4742)
+27.6416 <= x <= 80.3322
+43.4666 <= y <= 116.021
+0.0001 <= z <= 15.0001
+Shell volume: 10772.6	(num triangles: 5334)
+77.8395 <= x <= 112.058
+75.4895 <= y <= 124.237
+0.0001 <= z <= 15.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\ledHousings\turnSignalsLeft_cubify.stl was GOOD
