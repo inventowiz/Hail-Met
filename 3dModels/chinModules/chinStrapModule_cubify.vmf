@@ -1,0 +1,21 @@
+Part Extents:
+43.3868 <= x <= 96.3132
+29.4063 <= y <= 110.294
+0.0001 <= z <= 16.0001
+3092 output triangles
+3092 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+2 distinct shells:
+Shell volume: 8435.51	(num triangles: 2032)
+43.3868 <= x <= 71.3868
+29.4063 <= y <= 73.4063
+0.0001 <= z <= 16.0001
+Shell volume: 4541.13	(num triangles: 1060)
+68.3132 <= x <= 96.3132
+66.2937 <= y <= 110.294
+0.0001 <= z <= 8.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\chinModules\chinStrapModule_cubify.stl was GOOD
