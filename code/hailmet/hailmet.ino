@@ -38,6 +38,7 @@ Button btnBtAction;
 int connLightState = 0;
 
 bool checkState = false;
+int stateChangeCount = 0;
 
 int lightSensorVal;
 
@@ -67,7 +68,7 @@ void toggleRightTurnSignal() {
 }
 
 void btStateChanged() {
-  checkState = true;
+  stateChangeCount++;
 }
 
 void setBtDiscoverable() {
@@ -107,6 +108,14 @@ void handleBtStateChange() {
       digitalWrite(PIN_BT_CONNECTED, HIGH);
       connLightState = 1;
     break;
+  }
+  
+  if (bt.incomingCall()) {
+    helmet.setCallStatus(INCOMING_CALL);
+  } else if (bt.activeCall()) {
+    helmet.setCallStatus(ACTIVE_CALL);
+  } else {
+    helmet.setCallStatus(NO_CALL);
   }
 }
 
@@ -166,9 +175,9 @@ void setup() {
 }
 
 void loop() {
-  if (checkState) {
+  if (stateChangeCount > 0) {
     handleBtStateChange();
-    checkState = false;
+    stateChangeCount--;
   }
   
   lightSensorVal = analogRead(PIN_LIGHT_SENSOR);
