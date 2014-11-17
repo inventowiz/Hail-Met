@@ -48,7 +48,6 @@ class RN52 {
     State prevState;
     State state;
     bool discoverable;
-    bool incomingCallActive;
     bool isCommanding;
 
     int gpio9Pin;
@@ -60,14 +59,11 @@ class RN52 {
 
     int ASCIIToNum(char c);
 
-    // This function will wait for a serial response of the specified length
-    // not including the length of the terminating string (if any) and return
-    // the response (again, not including the terminating string)
-    String waitForSerial(int length);
-
     // This function will wait for a serial response that ends with the
     // termination character
     String waitForResponse();
+    
+    void sendCommand(String str, bool requireConnected = false);
 
   public:
     // This will configure the RN52 properly, rebooting if
@@ -87,9 +83,15 @@ class RN52 {
 
     void disconnect();
 
+    // Returns true if bluetooth is connected/paired
+    bool isConnected();
+    
     // Call commands
     // Returns true if there is an incoming call.
     bool incomingCall();
+    
+    // Returns true if there is an active call.
+    bool activeCall();
 
     // Accepts and incoming call.
     void acceptCall();
@@ -104,6 +106,7 @@ class RN52 {
     void nextTrack();
     void previousTrack();
     void playPause();
+    void activateVoiceCommand();
 
     int getConnectionStatus();
     bool isInCommandMode();
