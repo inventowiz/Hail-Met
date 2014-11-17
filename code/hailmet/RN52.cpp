@@ -100,6 +100,12 @@ void RN52::disconnect() {
   sendCommand("K,E", true);
 }
 
+void RN52::reboot() {
+  enterCommandMode();
+  serial->print("R,1\r");
+  exitCommandMode();
+}
+
 bool RN52::isConnected() {
   return state.connectionStatus > 2;
 }

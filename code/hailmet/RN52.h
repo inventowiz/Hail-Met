@@ -82,6 +82,8 @@ class RN52 {
     void attemptReconnect();
 
     void disconnect();
+    
+    void reboot();
 
     // Returns true if bluetooth is connected/paired
     bool isConnected();

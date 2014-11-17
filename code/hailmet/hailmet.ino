@@ -17,9 +17,11 @@
 #define PIN_BT_CONNECTED 7
 #define PIN_LIGHT_SENSOR A0
 #define PIN_BT_ACCEPT_REJECT 9
+#define PIN_BT_ENABLE A1
 
 #define HEADLIGHT_MIN_BRIGHTNESS 25
 #define BTN_HELD_LENGTH 7500
+#define BTN_LONG_HELD_LENGTH 15000
 
 RN52 bt;
 LedDriver ledDriver;
@@ -35,17 +37,35 @@ Button btnSignalRight;
 Button btnBtDiscoverable;
 Button btnBtAction;
 
-int connLightState = 0;
+bool connLightState = false;
+int connLightDelay = 0;
 
 bool checkState = false;
 int stateChangeCount = 0;
+
+bool programMode = false;
 
 int lightSensorVal;
 
 void timerInterrupt() {
   helmet.updateLights();  
   
-  if (bt.getConnectionStatus() == 2) {
+  
+  if (programMode) {
+    if (connLightDelay == 0) {
+      digitalWrite(PIN_BT_CONNECTED, HIGH);
+      connLightState = true;
+    } else {
+      digitalWrite(PIN_BT_CONNECTED, LOW);
+      connLightState = false;
+    }
+    
+    if (connLightDelay >= 3) {
+      connLightDelay = 0;
+    } else {
+      connLightDelay++;
+    }
+  } else if (bt.getConnectionStatus() == 2) {
     digitalWrite(PIN_BT_CONNECTED, connLightState);
     connLightState = !connLightState;
   }
@@ -71,8 +91,17 @@ void btStateChanged() {
   stateChangeCount++;
 }
 
-void setBtDiscoverable() {
-  bt.setDiscoverable(true);
+void setProgramMode() {
+  connLightDelay = 0;
+  programMode = true;
+  digitalWrite(PIN_BT_ENABLE, LOW);
+  bt.reboot();
+}
+
+void setBtDiscoverable(bool held) {
+  if (!held) {
+    bt.setDiscoverable(true);
+  }
 }
 
 void btnBtActionHeld() {
@@ -120,16 +149,24 @@ void handleBtStateChange() {
 }
 
 void setup() {
-  pinMode(PIN_SIGNAL_LEFT, INPUT);            // Initialize Left Turn Signal Button
+  // Initialize Left Turn Signal Button
+  pinMode(PIN_SIGNAL_LEFT, INPUT);
   digitalWrite(PIN_SIGNAL_LEFT, HIGH);
 
-  pinMode(PIN_SIGNAL_RIGHT, INPUT);            // Initialize Right Turn Signal Button
+  // Initialize Right Turn Signal Button
+  pinMode(PIN_SIGNAL_RIGHT, INPUT);
   digitalWrite(PIN_SIGNAL_RIGHT, HIGH);
   
-  pinMode(PIN_BT_CONNECTED, OUTPUT);          // Initialize Bluetooth Connected LED
+  // Initialize Bluetooth Connected LED
+  pinMode(PIN_BT_CONNECTED, OUTPUT);
   digitalWrite(PIN_BT_CONNECTED, LOW);
   
-  pinMode(PIN_BT_EVENT_CHANGE, INPUT);          // Initialize Bluetooth Event Change Button
+  // Initialize Bluetooth Enable
+  pinMode(PIN_BT_ENABLE, OUTPUT);
+  digitalWrite(PIN_BT_ENABLE, HIGH);
+  
+  // Initialize Bluetooth Event Change
+  pinMode(PIN_BT_EVENT_CHANGE, INPUT);
   digitalWrite(PIN_BT_EVENT_CHANGE, HIGH);
   PCintPort::attachInterrupt(PIN_BT_EVENT_CHANGE, &btStateChanged, FALLING);
   
@@ -156,7 +193,7 @@ void setup() {
   // Set up buttons
   btnSignalLeft.init(&signalLeft, true, BTN_HELD_LENGTH, toggleLeftTurnSignal, NULL, NULL);
   btnSignalRight.init(&signalRight, true, BTN_HELD_LENGTH, toggleRightTurnSignal, NULL, NULL);
-  btnBtDiscoverable.init(&btDiscoverable, true, BTN_HELD_LENGTH, setBtDiscoverable, NULL, NULL);
+  btnBtDiscoverable.init(&btDiscoverable, true, BTN_LONG_HELD_LENGTH, NULL, setBtDiscoverable, setProgramMode);
   btnBtAction.init(&btAction, true, BTN_HELD_LENGTH, NULL, btnBtActionReleased, btnBtActionHeld);
 
   Serial.begin(115200);
