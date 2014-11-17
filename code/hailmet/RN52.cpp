@@ -67,11 +67,13 @@ bool RN52::exitCommandMode() {
   return !(isInCommandMode());
 }
 
-void RN52::sendCommand(String str) {
-  enterCommandMode();
-  serial->print(str);
-  waitForResponse();
-  exitCommandMode();
+void RN52::sendCommand(String str, bool requireConnected) {
+  if (!requireConnected || isConnected()) {  
+    enterCommandMode();
+    serial->print(str);
+    waitForResponse();
+    exitCommandMode();
+  }
 }
 
 String RN52::waitForResponse() {
@@ -84,54 +86,62 @@ bool RN52::isDiscoverable() {
 
 void RN52::setDiscoverable(bool discoverable) {
   if (discoverable) {
-    sendCommand("@,1\r");
+    sendCommand("@,1\r", false);
   } else {
-    sendCommand("@,0\r");
+    sendCommand("@,0\r", false);
   }
 }
 
 void RN52::attemptReconnect() {
-  sendCommand("B\r");
+  sendCommand("B\r", false);
 }
 
 void RN52::disconnect() {
-  sendCommand("K,E");
+  sendCommand("K,E", true);
+}
+
+bool RN52::isConnected() {
+  return state.connectionStatus > 2;
 }
 
 bool RN52::incomingCall() {
   return state.connectionStatus == 5;
 }
 
+bool RN52::activeCall() {
+  return state.connectionStatus == 6;
+}
+
 void RN52::acceptCall() {
-  sendCommand("C\r");
+  sendCommand("C\r", true);
 }
 
 void RN52::rejectCall() {
-  sendCommand("E\r");
+  sendCommand("E\r", true);
 }
 
 void RN52::increaseVolume() {
-  sendCommand("AV+\r");
+  sendCommand("AV+\r", true);
 }
 
 void RN52::decreaseVolume() {
-  sendCommand("AV-\r");
+  sendCommand("AV-\r", true);
 }
 
 void RN52::nextTrack() {
-  sendCommand("AT+\r");
+  sendCommand("AT+\r", true);
 }
 
 void RN52::previousTrack() {
-  sendCommand("AT-\r");
+  sendCommand("AT-\r", true);
 }
 
 void RN52::playPause() {
-  sendCommand("AP\r");
+  sendCommand("AP\r", true);
 }
 
 void RN52::activateVoiceCommand() {
-  sendCommand("P\r");
+  sendCommand("P\r", true);
 }
 
 int RN52::getConnectionStatus() {

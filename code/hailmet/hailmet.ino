@@ -42,26 +42,12 @@ bool checkState = false;
 int lightSensorVal;
 
 void timerInterrupt() {
-  helmet.updateLights();
+  helmet.updateLights();  
   
-  int connStatus = bt.getConnectionStatus();
-  
-  switch(connStatus) {
-    case 1:
-      digitalWrite(PIN_BT_CONNECTED, LOW);
-      connLightState = 0;      
-    break;
-    case 2:
-      digitalWrite(PIN_BT_CONNECTED, connLightState);
-      connLightState = !connLightState;
-    break;
-
-    case 3:
-      digitalWrite(PIN_BT_CONNECTED, HIGH);
-      connLightState = 1;
-    break;
+  if (bt.getConnectionStatus() == 2) {
+    digitalWrite(PIN_BT_CONNECTED, connLightState);
+    connLightState = !connLightState;
   }
-  
 }
 
 void toggleLeftTurnSignal() {
@@ -99,20 +85,28 @@ void btnBtActionReleased(bool held) {
     if (!held) {
       bt.acceptCall();
     } 
-  } else {
+  } else if (bt.activeCall()) {
+    bt.rejectCall();
+  } else {  
     bt.activateVoiceCommand();
   }
 }
 
 void handleBtStateChange() {
-  int connStatus;
-
   bt.updateConnectionStatus();
 
-  if (connStatus == 14) {
-    // Turn on low battery indicator light
-  } else {
-    // Turn off low battery indicator light
+  int connStatus = bt.getConnectionStatus();
+  
+  switch(connStatus) {
+    case 1:
+      digitalWrite(PIN_BT_CONNECTED, LOW);
+      connLightState = 0;      
+    break;
+
+    case 3:
+      digitalWrite(PIN_BT_CONNECTED, HIGH);
+      connLightState = 1;
+    break;
   }
 }
 

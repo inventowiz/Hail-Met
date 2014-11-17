@@ -48,7 +48,6 @@ class RN52 {
     State prevState;
     State state;
     bool discoverable;
-    bool incomingCallActive;
     bool isCommanding;
 
     int gpio9Pin;
@@ -64,7 +63,7 @@ class RN52 {
     // termination character
     String waitForResponse();
     
-    void sendCommand(String str);
+    void sendCommand(String str, bool requireConnected = false);
 
   public:
     // This will configure the RN52 properly, rebooting if
@@ -84,9 +83,15 @@ class RN52 {
 
     void disconnect();
 
+    // Returns true if bluetooth is connected/paired
+    bool isConnected();
+    
     // Call commands
     // Returns true if there is an incoming call.
     bool incomingCall();
+    
+    // Returns true if there is an active call.
+    bool activeCall();
 
     // Accepts and incoming call.
     void acceptCall();
