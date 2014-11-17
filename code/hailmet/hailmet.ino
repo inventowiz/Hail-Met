@@ -18,8 +18,12 @@
 #define PIN_LIGHT_SENSOR A0
 #define PIN_BT_ACCEPT_REJECT A3
 #define PIN_BT_ENABLE 9
+#define PIN_HEADLIGHT 5
 
-#define HEADLIGHT_MIN_BRIGHTNESS 25
+#define HEADLIGHT_MIN_BRIGHTNESS 10
+#define HEADLIGHT_MAX_BRIGHTNESS 128
+#define HEADLIGHT_MIN_TRIGGER 20
+#define HEADLIGHT_MAX_TRIGGER 35
 #define BTN_HELD_LENGTH 7500
 #define BTN_LONG_HELD_LENGTH 15000
 
@@ -49,7 +53,6 @@ int lightSensorVal;
 
 void timerInterrupt() {
   helmet.updateLights();  
-  
   
   if (programMode) {
     if (connLightDelay == 0) {
@@ -203,7 +206,7 @@ void setup() {
 
   ledDriver.init(PIN_LED_DRIVER_LATCH, PIN_LED_DRIVER_ENABLE);
   
-  helmet.init(ledDriver);
+  helmet.init(ledDriver, PIN_HEADLIGHT);
   helmet.enableTaillight();
   helmet.updateLights();
 
@@ -220,12 +223,18 @@ void loop() {
   lightSensorVal = analogRead(PIN_LIGHT_SENSOR);
   lightSensorVal = map(lightSensorVal, 0, 1023, 0, 255);
   ledDriver.setBrightness(max(255 - lightSensorVal, 30));
-  
-  if (lightSensorVal < 50) {
-    helmet.setHeadlightBrightness(max(HEADLIGHT_MIN_BRIGHTNESS, lightSensorVal));
-    helmet.enableHeadlight();
+  int adjustedLightVal = map(lightSensorVal, 0, HEADLIGHT_MAX_TRIGGER, 0, HEADLIGHT_MAX_BRIGHTNESS);
+  if (helmet.getHeadlight()) {
+    if (lightSensorVal > HEADLIGHT_MAX_TRIGGER) {
+      helmet.disableHeadlight();
+    } else {
+      helmet.setHeadlightBrightness(max(HEADLIGHT_MIN_BRIGHTNESS, HEADLIGHT_MAX_BRIGHTNESS - adjustedLightVal));
+    }
   } else {
-    helmet.disableHeadlight();
+    if (lightSensorVal < HEADLIGHT_MIN_TRIGGER) {
+      helmet.setHeadlightBrightness(max(HEADLIGHT_MIN_BRIGHTNESS, HEADLIGHT_MAX_BRIGHTNESS - adjustedLightVal));
+      helmet.enableHeadlight();
+    }
   }
   
   btnSignalLeft.update();

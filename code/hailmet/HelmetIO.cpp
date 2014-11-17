@@ -70,8 +70,10 @@ char HelmetIO::generateLedStates() {
   return res;
 }
 
-void HelmetIO::init(LedDriver &ledDriver) {
+void HelmetIO::init(LedDriver &ledDriver, int headlightPin) {
   this->ledDriver = &ledDriver;
+  this->headlightPin = headlightPin;
+  
   leftSignalsActive = 0;
   rightSignalsActive = 0;
   indicatorActive = false;
@@ -80,25 +82,38 @@ void HelmetIO::init(LedDriver &ledDriver) {
   callStatus = NO_CALL;
   
   this->ledDriver->write(0);
+  disableHeadlight();
 }
 
 // Called within loop (or timer interrupt)
 void HelmetIO::updateLights() {
   ledDriver->write(generateLedStates());
+  
+  if (headlight) {
+    updateHeadlightBrightness();
+  }
 }
 
 void HelmetIO::enableHeadlight() {
   headlight = true;
-  analogWrite(PIN_HEADLIGHT, headlightBrightness);
+  updateHeadlightBrightness();
 }
 
 void HelmetIO::disableHeadlight() {
   headlight = false;
-  digitalWrite(PIN_HEADLIGHT, LOW);
+  digitalWrite(headlightPin, LOW);
 }
 
 void HelmetIO::setHeadlightBrightness(int brightness){
   headlightBrightness = brightness;
+}
+
+void HelmetIO::updateHeadlightBrightness() {
+  analogWrite(headlightPin, headlightBrightness);
+}
+
+bool HelmetIO::getHeadlight() {
+  return headlight;
 }
 
 void HelmetIO::enableTaillight() {
