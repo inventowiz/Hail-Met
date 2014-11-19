@@ -75,6 +75,10 @@ void timerInterrupt() {
 }
 
 void toggleLeftTurnSignal() {
+  if (helmet.getRightTurnSignal()) {
+    helmet.disableRightTurnSignal();
+  }
+  
   if (helmet.getLeftTurnSignal()) {
     helmet.disableLeftTurnSignal();
   } else {
@@ -83,6 +87,10 @@ void toggleLeftTurnSignal() {
 }
 
 void toggleRightTurnSignal() {
+  if (helmet.getLeftTurnSignal()) {
+    helmet.disableLeftTurnSignal();
+  }
+  
   if (helmet.getRightTurnSignal()) {
     helmet.disableRightTurnSignal();
   } else {
