@@ -20753,8 +20753,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
 <part name="RT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
-<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0805" value="22pF"/>
+<part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0805" value="2.2uF"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="240"/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="390"/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1uF"/>
@@ -21010,6 +21010,7 @@ circuit to board.</text>
 <text x="0" y="38.1" size="1.778" layer="91">Use to jump power
 from solar charging
 circuit to board.</text>
+<wire x1="-187.96" y1="-7.62" x2="50.8" y2="-7.62" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="116.84" y="58.42"/>
