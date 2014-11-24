@@ -2659,8 +2659,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="64.786" y="20.3822" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="65.0146" y="21.4172" size="0.8128" layer="27"/>
 </element>
-<element name="C7" library="SparkFun-Passives" package="0805" value="10uF" x="65.4304" y="36.4998" rot="R90"/>
-<element name="C8" library="SparkFun-Passives" package="0805" value="22pF" x="67.2338" y="40.4368" rot="R270"/>
+<element name="C7" library="SparkFun-Passives" package="0805" value="0.1uF" x="65.4304" y="36.4998" rot="R90"/>
+<element name="C8" library="SparkFun-Passives" package="0805" value="2.2uF" x="67.2338" y="40.4368" rot="R270"/>
 <element name="CHRG/LBO" library="adafruit" package="CHIP-LED0805" value="ORANGE" x="50.2666" y="33.6296" smashed="yes">
 <attribute name="NAME" x="49.5046" y="31.9532" size="0.8128" layer="25" rot="R90"/>
 </element>

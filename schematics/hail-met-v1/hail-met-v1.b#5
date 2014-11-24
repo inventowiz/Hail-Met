@@ -2877,7 +2877,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C13" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="" x="9.9568" y="56.007" rot="R90"/>
 <element name="C14" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="" x="72.3392" y="53.4162" rot="R180"/>
 <element name="Q1" library="SparkFun" package="SOT23-3" value="" x="51.2064" y="18.5166" rot="R180"/>
-<element name="IC2" library="adafruit" package="TO92" value="78L05Z" x="2.3114" y="-9.3726"/>
+<element name="IC2" library="adafruit" package="TO92" value="78L05Z" x="61.8236" y="34.036" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3178,8 +3178,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="49.7332" y="21.0566" extent="1-16" drill="0.9" shape="octagon"/>
 <contactref element="U$3" pad="AGND"/>
 <contactref element="IC2" pad="2"/>
-<wire x1="1.27" y1="6.35" x2="2.3114" y2="-7.4676" width="0" layer="19" extent="1-1"/>
-<wire x1="74.6506" y1="27.813" x2="74.3966" y2="30.353" width="0" layer="19" extent="1-1"/>
+<wire x1="74.3966" y1="30.353" x2="74.6506" y2="27.813" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="JP-BT3" pad="2"/>
@@ -3222,7 +3221,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="65.4304" y1="35.5092" x2="65.7098" y2="35.2298" width="1.6764" layer="1"/>
 <wire x1="65.7098" y1="35.2298" x2="65.7098" y2="35.2552" width="1.6764" layer="1"/>
 <contactref element="IC2" pad="3"/>
-<wire x1="61.4172" y1="35.3568" x2="3.5814" y2="-9.3726" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C8" pad="1"/>
@@ -3368,7 +3366,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="71.0946" y1="55.5498" x2="71.0946" y2="51.3334" width="2.1844" layer="1"/>
 <wire x1="71.0946" y1="51.3334" x2="71.0438" y2="51.2826" width="2.1844" layer="1"/>
 <contactref element="IC2" pad="1"/>
-<wire x1="22.098" y1="14.224" x2="1.0414" y2="-9.3726" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXD">
 <contactref element="U1" pad="30"/>
