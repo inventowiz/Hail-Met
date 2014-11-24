@@ -2326,7 +2326,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.98801875" y1="0.582625" x2="1.40305" y2="0.60446875" layer="200"/>
 <rectangle x1="1.62149375" y1="0.582625" x2="1.6433375" y2="0.60446875" layer="200"/>
 <rectangle x1="-1.6332625" y1="0.60446875" x2="1.6433375" y2="0.6263125" layer="200"/>
-<rectangle x1="-1.75005625" y1="-0.769615625" x2="1.74498125" y2="0.764540625" layer="29"/>
 <wire x1="-1.2" y1="0" x2="-1.2" y2="1.016" width="0.254" layer="1"/>
 <wire x1="-1.2" y1="-1.016" x2="-1.2" y2="0" width="0.254" layer="1"/>
 <wire x1="1.2" y1="0" x2="1.2" y2="1.016" width="0.254" layer="1"/>

@@ -2743,9 +2743,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="66.04" y="17.3609" size="0.4064" layer="25" rot="R180"/>
 <attribute name="VALUE" x="66.1162" y="16.8148" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="RT1" library="SparkFun-Passives" package="0805" value="" x="56.3626" y="21.5392" rot="R90"/>
+<element name="RT1" library="SparkFun-Passives" package="0805" value="80k" x="56.3626" y="21.5392" rot="R90"/>
 <element name="R13" library="SparkFun-Passives" package="0805" value="10K" x="48.8188" y="30.226" rot="R270"/>
-<element name="RT2" library="SparkFun-Passives" package="0805" value="" x="57.8612" y="23.368" rot="R270"/>
+<element name="RT2" library="SparkFun-Passives" package="0805" value="0" x="57.8612" y="23.368" rot="R270"/>
 <element name="R16" library="SparkFun-Passives" package="0805" value="" x="3.81" y="35.56"/>
 <element name="R17" library="SparkFun-Passives" package="0805" value="" x="3.81" y="29.21"/>
 <element name="R18" library="SparkFun-Passives" package="0805" value="" x="36.957" y="55.626" rot="R270"/>
