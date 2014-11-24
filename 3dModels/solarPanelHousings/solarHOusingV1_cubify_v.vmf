@@ -1,0 +1,21 @@
+Part Extents:
+44.6943 <= x <= 94.9123
+31.6252 <= y <= 107.712
+9.99889e-005 <= z <= 5.0001
+1432 output triangles
+1432 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+2 distinct shells:
+Shell volume: 1178.84	(num triangles: 868)
+44.6943 <= x <= 68.6805
+31.6252 <= y <= 107.672
+9.99889e-005 <= z <= 5.0001
+Shell volume: 3247.55	(num triangles: 564)
+70.7469 <= x <= 94.9123
+32.291 <= y <= 107.712
+2.0001 <= z <= 5.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\solarPanelHousings\solarHOusingV1_cubify_v.stl was GOOD
