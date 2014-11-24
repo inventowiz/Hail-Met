@@ -1,0 +1,21 @@
+Part Extents:
+24.3513 <= x <= 115.349
+38.8474 <= y <= 100.853
+0.0001 <= z <= 16.0001
+2858 output triangles
+2858 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+2 distinct shells:
+Shell volume: 21597.5	(num triangles: 1794)
+24.3513 <= x <= 69.3503
+38.8474 <= y <= 100.853
+0.0001 <= z <= 16.0001
+Shell volume: 6937.89	(num triangles: 1064)
+70.3532 <= x <= 115.349
+38.8474 <= y <= 100.853
+0.0001 <= z <= 5.0001
+C:\Users\Brian\Documents\Hail-Met\3dModels\chinModules\chinStrapModulev2_cubify.stl was GOOD
