@@ -1,0 +1,29 @@
+Part Extents:
+31.0977 <= x <= 108.602
+16.5794 <= y <= 123.121
+0.0001 <= z <= 5.0001
+4744 output triangles
+4744 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+4 distinct shells:
+Shell volume: 5343.02	(num triangles: 1992)
+31.0977 <= x <= 81.0977
+16.5794 <= y <= 66.5794
+0.0001 <= z <= 5.0001
+Shell volume: 3330.53	(num triangles: 380)
+58.0977 <= x <= 108.098
+17.5794 <= y <= 67.5794
+0.0001 <= z <= 5.0001
+Shell volume: 5343.01	(num triangles: 1992)
+31.6023 <= x <= 81.6023
+73.1206 <= y <= 123.121
+0.0001 <= z <= 5.0001
+Shell volume: 3330.54	(num triangles: 380)
+58.6023 <= x <= 108.602
+72.1206 <= y <= 122.121
+0.0001 <= z <= 5.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\ledHousings\turnSignalsFront_cubify.stl was GOOD

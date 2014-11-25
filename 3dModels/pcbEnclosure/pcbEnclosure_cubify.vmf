@@ -1,0 +1,17 @@
+Part Extents:
+13.3365 <= x <= 126.364
+28.9983 <= y <= 110.702
+0.0001 <= z <= 25.0001
+3226 output triangles
+3226 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+1 distinct shell:
+Shell volume: 79164.3	(num triangles: 3226)
+13.3365 <= x <= 126.364
+28.9983 <= y <= 110.702
+0.0001 <= z <= 25.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\pcbEnclosure\pcbEnclosure_cubify.stl was GOOD
