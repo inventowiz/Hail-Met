@@ -21171,6 +21171,7 @@ L4941 TO-92 package
 <text x="-180.34" y="25.4" size="1.778" layer="91">PROG3 - Charging termination current: 
   125mA: 8.2K (our spec)
   1mA: 100K (Adafruit spec)</text>
+<text x="162.56" y="81.28" size="1.778" layer="94">x</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="116.84" y="58.42"/>
@@ -22510,18 +22511,6 @@ L4941 TO-92 package
 <pinref part="Q1" gate="G$1" pin="B"/>
 </segment>
 </net>
-<net name="PC1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="142.24" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
-<label x="144.78" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT_PINS" gate="G$1" pin="7"/>
-<wire x1="27.94" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
-<label x="27.94" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BT_VOL_UP" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO5"/>
@@ -22706,6 +22695,16 @@ L4941 TO-92 package
 <pinref part="LED_LB" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="-66.04" x2="198.12" y2="-66.04" width="0.1524" layer="91"/>
 <label x="180.34" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="142.24" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
+<label x="144.78" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT_PINS" gate="G$1" pin="7"/>
+<wire x1="27.94" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
+<label x="27.94" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHG_PG" class="0">

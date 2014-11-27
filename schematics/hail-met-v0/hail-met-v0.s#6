@@ -20795,7 +20795,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="LED6-RR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED7-CS" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED0-IL" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="LED0-IR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="LED4-IR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="LED_CREE" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="P+8" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+9" library="SparkFun" deviceset="3.3V" device=""/>
@@ -20810,12 +20810,12 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="270K"/>
+<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2K"/>
-<part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
-<part name="RT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="8K"/>
+<part name="RT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
+<part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="80K"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0805" value="22pF"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="240"/>
@@ -21130,7 +21130,7 @@ circuit to board.</text>
 <instance part="LED6-RR" gate="G$1" x="167.64" y="-68.58" rot="R180"/>
 <instance part="LED7-CS" gate="G$1" x="167.64" y="-83.82" rot="R180"/>
 <instance part="LED0-IL" gate="G$1" x="142.24" y="-22.86" rot="R180"/>
-<instance part="LED0-IR" gate="G$1" x="167.64" y="-22.86" rot="R180"/>
+<instance part="LED4-IR" gate="G$1" x="167.64" y="-22.86" rot="R180"/>
 <instance part="LED_CREE" gate="G$1" x="99.06" y="-15.24" rot="R180"/>
 <instance part="P+8" gate="G$1" x="127" y="-38.1"/>
 <instance part="P+9" gate="G$1" x="127" y="-53.34"/>
@@ -21724,7 +21724,7 @@ circuit to board.</text>
 <wire x1="129.54" y1="-22.86" x2="134.62" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED0-IR" gate="G$1" pin="1"/>
+<pinref part="LED4-IR" gate="G$1" pin="1"/>
 <pinref part="P+17" gate="G$1" pin="3.3V"/>
 <wire x1="160.02" y1="-22.86" x2="154.94" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
@@ -22292,7 +22292,7 @@ circuit to board.</text>
 </net>
 <net name="N$66" class="0">
 <segment>
-<pinref part="LED0-IR" gate="G$1" pin="2"/>
+<pinref part="LED4-IR" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 </net>

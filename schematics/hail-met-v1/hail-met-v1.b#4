@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.0003" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -5014,17 +5014,15 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.2032" layer="16">
 <vertex x="30.226" y="36.0426"/>
 <vertex x="30.226" y="35.3314"/>
-<vertex x="31.3944" y="34.163"/>
 <vertex x="35.5092" y="30.0482"/>
 <vertex x="35.5092" y="25.8318"/>
 <vertex x="36.9316" y="24.4094"/>
-<vertex x="36.9316" y="17.8816"/>
 <vertex x="36.9316" y="16.2814"/>
 <vertex x="37.8968" y="15.3162"/>
 <vertex x="38.5318" y="15.3162"/>
 <vertex x="39.2938" y="16.0782"/>
-<vertex x="39.2938" y="26.9748"/>
-<vertex x="41.1226" y="28.8036"/>
+<vertex x="39.2938" y="26.2128"/>
+<vertex x="41.1226" y="28.0416"/>
 <vertex x="42.5704" y="28.8036"/>
 <vertex x="43.7896" y="30.0228"/>
 <vertex x="43.7896" y="30.6324"/>

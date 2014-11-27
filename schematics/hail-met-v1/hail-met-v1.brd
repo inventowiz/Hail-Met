@@ -6010,17 +6010,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="Q1" pad="1"/>
 <wire x1="52.1564" y1="21.783" x2="52.1564" y2="19.5166" width="0.4064" layer="1"/>
 </signal>
-<signal name="PC1">
-<contactref element="U1" pad="24"/>
-<wire x1="17.2974" y1="32.76" x2="16.008" y2="32.76" width="0.254" layer="1"/>
-<wire x1="16.008" y1="32.76" x2="15.748" y2="33.02" width="0.254" layer="1"/>
-<via x="15.748" y="33.02" extent="1-16" drill="0.3302" shape="octagon"/>
-<wire x1="15.748" y1="33.02" x2="14.9098" y2="33.8582" width="0.254" layer="16"/>
-<wire x1="14.9098" y1="33.8582" x2="12.2682" y2="33.8582" width="0.254" layer="16"/>
-<contactref element="AT_PINS" pad="7"/>
-<wire x1="12.2682" y1="33.8582" x2="12.2174" y2="33.8582" width="0.2032" layer="16"/>
-<wire x1="12.2174" y1="33.8582" x2="10.9728" y2="32.6136" width="0.254" layer="16"/>
-</signal>
 <signal name="BT_VOL_UP">
 <contactref element="U$3" pad="GPIO5"/>
 <contactref element="SW_VUP" pad="1"/>
@@ -6169,6 +6158,16 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="62.1538" y1="40.132" x2="62.23" y2="40.2082" width="0.4064" layer="1"/>
 <via x="62.23" y="40.2082" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="62.23" y1="40.2082" x2="62.23" y2="48.26" width="0.4064" layer="16"/>
+<contactref element="U1" pad="24"/>
+<wire x1="16.008" y1="32.76" x2="15.748" y2="33.02" width="0.254" layer="1"/>
+<via x="15.748" y="33.02" extent="1-16" drill="0.3302" shape="octagon"/>
+<wire x1="15.748" y1="33.02" x2="14.9098" y2="33.8582" width="0.254" layer="16"/>
+<wire x1="14.9098" y1="33.8582" x2="12.2682" y2="33.8582" width="0.254" layer="16"/>
+<contactref element="AT_PINS" pad="7"/>
+<wire x1="12.2682" y1="33.8582" x2="12.2174" y2="33.8582" width="0.2032" layer="16"/>
+<wire x1="12.2174" y1="33.8582" x2="10.9728" y2="32.6136" width="0.254" layer="16"/>
+<wire x1="16.008" y1="32.76" x2="17.2974" y2="32.76" width="0.254" layer="1"/>
+<wire x1="17.2974" y1="32.76" x2="60.1472" y2="40.132" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHG_PG">
 <contactref element="AND-GATE" pad="10"/>

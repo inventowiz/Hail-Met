@@ -156,8 +156,8 @@ VIO
 CLK</text>
 <text x="61.849" y="40.4368" size="0.8128" layer="25" rot="R90">AND Gate</text>
 <text x="38.354" y="5.3594" size="0.8128" layer="26" rot="MR0">Hail-met v1
-Ben Wang, Brian Margosian,
-Brian Daniels, Alex Jaeckel, Patrick Hayes
+Ben Wang, Brian Margosian, Brian Daniels,
+Alex Jaeckel, Patrick Hayes
 EECS 473
 University of Michigan
 (C) 2014</text>
