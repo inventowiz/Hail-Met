@@ -20955,7 +20955,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="JBATT" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="JSOLAR" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="MIC_L" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
-<part name="MIC_R" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="SPK_L" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="SPK_R" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
@@ -21028,9 +21027,9 @@ to batteries</text>
 <text x="-58.42" y="2.54" size="1.778" layer="91" distance="5" align="bottom-right">10K NTC Thermistor:</text>
 <text x="-55.88" y="5.08" size="1.778" layer="91" distance="5">RT1 = 0, RT2 = 10K</text>
 <text x="-55.88" y="2.54" size="1.778" layer="91" distance="5">RT1 = 1k, RT2 = 150k</text>
-<text x="-172.72" y="15.24" size="1.778" layer="91" distance="5">Charge Rate = 1000V/PROG1</text>
-<text x="-162.56" y="10.16" size="1.778" layer="91" distance="5">1.0K = 1000mA</text>
-<text x="-162.56" y="7.62" size="1.778" layer="91" distance="5">2.0K = 500mA</text>
+<text x="-180.34" y="17.78" size="1.778" layer="91" distance="5">Charge Rate = 1000V/PROG1</text>
+<text x="-170.18" y="12.7" size="1.778" layer="91" distance="5">1.0K = 1000mA</text>
+<text x="-170.18" y="10.16" size="1.778" layer="91" distance="5">2.0K = 500mA</text>
 <text x="-111.76" y="71.12" size="1.778" layer="91" distance="5">NEED TO SET THIS TO VREG.
 For 6V solar panel, use 1KOhm / 1KOhm</text>
 <text x="15.24" y="63.5" size="1.778" layer="91">DONE</text>
@@ -21040,7 +21039,7 @@ For 6V solar panel, use 1KOhm / 1KOhm</text>
 <wire x1="-2.54" y1="58.42" x2="-2.54" y2="104.14" width="0.1524" layer="94"/>
 <text x="12.7" y="60.96" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
-<text x="-162.56" y="0" size="1.778" layer="91" align="bottom-right">Design:
+<text x="-167.64" y="0" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
 <text x="68.58" y="-96.52" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
@@ -21052,7 +21051,7 @@ Validate:</text>
 <wire x1="220.98" y1="-7.62" x2="220.98" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="220.98" y1="-106.68" x2="53.34" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="53.34" y1="-106.68" x2="53.34" y2="-7.62" width="0.1524" layer="94"/>
-<text x="-160.02" y="2.54" size="1.778" layer="91">Done, need VCC resistor check</text>
+<text x="-165.1" y="2.54" size="1.778" layer="91">Done, need VCC resistor check</text>
 <wire x1="50.8" y1="-7.62" x2="50.8" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="50.8" y1="-106.68" x2="-187.96" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="-187.96" y1="-106.68" x2="-187.96" y2="-7.62" width="0.1524" layer="94"/>
@@ -21169,6 +21168,9 @@ circuit to board.</text>
 <text x="0" y="68.58" size="1.778" layer="94">Voltage Regulator:
 L4941 TO-92 package
 </text>
+<text x="-180.34" y="25.4" size="1.778" layer="91">PROG3 - Charging termination current: 
+  125mA: 8.2K (our spec)
+  1mA: 100K (Adafruit spec)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="116.84" y="58.42"/>
@@ -21272,7 +21274,6 @@ L4941 TO-92 package
 <instance part="JBATT" gate="G$1" x="-12.7" y="33.02"/>
 <instance part="JSOLAR" gate="G$1" x="-132.08" y="91.44"/>
 <instance part="MIC_L" gate="G$1" x="-53.34" y="-66.04"/>
-<instance part="MIC_R" gate="G$1" x="-53.34" y="-83.82"/>
 <instance part="SPK_L" gate="G$1" x="-43.18" y="-43.18"/>
 <instance part="SPK_R" gate="G$1" x="-43.18" y="-53.34"/>
 <instance part="GND17" gate="1" x="78.74" y="-38.1"/>
@@ -22300,16 +22301,6 @@ L4941 TO-92 package
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MIC_R-" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="MIC_R-"/>
-<wire x1="-86.36" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-81.28" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="MIC_R" gate="G$1" pin="1"/>
-<wire x1="-55.88" y1="-81.28" x2="-76.2" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-71.12" y="-81.28" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="MIC_L-" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="MIC_L-"/>
@@ -22318,16 +22309,6 @@ L4941 TO-92 package
 <pinref part="MIC_L" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="-63.5" x2="-55.88" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-71.12" y="-63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MIC_R+" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="MIC_R+"/>
-<wire x1="-86.36" y1="-63.5" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-83.82" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="MIC_R" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="-83.82" x2="-55.88" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-71.12" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPU_INT" class="0">

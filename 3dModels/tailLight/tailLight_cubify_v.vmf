@@ -1,0 +1,17 @@
+Part Extents:
+57.35 <= x <= 82.35
+54.85 <= y <= 84.85
+0.0001 <= z <= 8.0001
+1586 output triangles
+1586 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+1 distinct shell:
+Shell volume: 2951.26	(num triangles: 1586)
+57.35 <= x <= 82.35
+54.85 <= y <= 84.85
+0.0001 <= z <= 8.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\tailLight\tailLight_cubify_v.stl was GOOD
