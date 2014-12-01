@@ -20868,18 +20868,18 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="LM4871" library="SparkFun" deviceset="LM4871" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
-<part name="RI_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22K"/>
+<part name="RI_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22K (20K)"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0805K" value="1uF"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="RI_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22K"/>
+<part name="RI_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22K (20K)"/>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
-<part name="RF_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="180K"/>
-<part name="RF_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="180K"/>
-<part name="CI_L" library="adafruit" deviceset="C-US" device="C0805K" value="2.2uF"/>
-<part name="CI_R" library="adafruit" deviceset="C-US" device="C0805K" value="2.2uF"/>
+<part name="RF_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="180K (200K)"/>
+<part name="RF_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="180K (200K)"/>
+<part name="CI_L" library="adafruit" deviceset="C-US" device="C0805K" value="2.2uF (1uF)"/>
+<part name="CI_R" library="adafruit" deviceset="C-US" device="C0805K" value="2.2uF (1uF)"/>
 <part name="NTC_THERM" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="MPU-6050" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
 <part name="CO_L" library="adafruit" deviceset="C-US" device="C0805K" value="100uF"/>
