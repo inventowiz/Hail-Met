@@ -20868,22 +20868,22 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="LM4871" library="SparkFun" deviceset="LM4871" device=""/>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
-<part name="RI_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
+<part name="RI_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22K"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C0805K" value="1uF"/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="RI_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
+<part name="RI_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="22K"/>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0805K" value="0.1uF"/>
-<part name="RF_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
-<part name="RF_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20k"/>
-<part name="CI_L" library="adafruit" deviceset="C-US" device="C0805K"/>
-<part name="CI_R" library="adafruit" deviceset="C-US" device="C0805K"/>
+<part name="RF_R" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="180K"/>
+<part name="RF_L" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="180K"/>
+<part name="CI_L" library="adafruit" deviceset="C-US" device="C0805K" value="2.2uF"/>
+<part name="CI_R" library="adafruit" deviceset="C-US" device="C0805K" value="2.2uF"/>
 <part name="NTC_THERM" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="MPU-6050" library="SparkFun-Connectors" deviceset="M08" device="LOCK"/>
-<part name="CO_L" library="adafruit" deviceset="C-US" device="C0805K"/>
-<part name="CO_R" library="adafruit" deviceset="C-US" device="C0805K"/>
+<part name="CO_L" library="adafruit" deviceset="C-US" device="C0805K" value="100uF"/>
+<part name="CO_R" library="adafruit" deviceset="C-US" device="C0805K" value="100uF"/>
 <part name="PWR_BUTTON" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="SW_TL" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
@@ -21206,18 +21206,18 @@ circuit to board.</text>
 <instance part="LM4871" gate="G$1" x="-2.54" y="-43.18"/>
 <instance part="P+3" gate="G$1" x="-22.86" y="-30.48"/>
 <instance part="GND19" gate="1" x="-27.94" y="-40.64"/>
-<instance part="RI_L" gate="G$1" x="-50.8" y="-38.1"/>
+<instance part="RI_L" gate="G$1" x="-48.26" y="-38.1"/>
 <instance part="GND20" gate="1" x="-73.66" y="-53.34"/>
-<instance part="GND21" gate="1" x="27.94" y="-17.78"/>
-<instance part="GND22" gate="1" x="27.94" y="-48.26"/>
+<instance part="GND21" gate="1" x="27.94" y="-15.24"/>
+<instance part="GND22" gate="1" x="27.94" y="-45.72"/>
 <instance part="C2" gate="G$1" x="-27.94" y="-53.34"/>
 <instance part="GND23" gate="1" x="-27.94" y="-60.96"/>
-<instance part="RI_R" gate="G$1" x="-50.8" y="-50.8"/>
+<instance part="RI_R" gate="G$1" x="-48.26" y="-50.8"/>
 <instance part="C6" gate="G$1" x="-30.48" y="-33.02"/>
 <instance part="RF_R" gate="G$1" x="-38.1" y="-58.42" rot="R90"/>
 <instance part="RF_L" gate="G$1" x="-38.1" y="-30.48" rot="R90"/>
-<instance part="CI_L" gate="G$1" x="-60.96" y="-38.1" rot="R270"/>
-<instance part="CI_R" gate="G$1" x="-60.96" y="-50.8" rot="R270"/>
+<instance part="CI_L" gate="G$1" x="-58.42" y="-38.1" rot="R270"/>
+<instance part="CI_R" gate="G$1" x="-58.42" y="-50.8" rot="R270"/>
 <instance part="NTC_THERM" gate="G$1" x="-40.64" y="22.86" rot="R180"/>
 <instance part="MPU-6050" gate="G$1" x="259.08" y="88.9" rot="R180"/>
 <instance part="CO_L" gate="G$1" x="25.4" y="-27.94" rot="R90"/>
@@ -21594,14 +21594,14 @@ circuit to board.</text>
 <segment>
 <pinref part="SPK_L" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-25.4" x2="35.56" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-25.4" x2="35.56" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-25.4" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="35.56" y1="-15.24" x2="27.94" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="27.94" y1="-45.72" x2="35.56" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-45.72" x2="35.56" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-43.18" x2="35.56" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-43.18" x2="35.56" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="SPK_R" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="-55.88" x2="40.64" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
@@ -22341,7 +22341,7 @@ circuit to board.</text>
 <pinref part="RF_L" gate="G$1" pin="1"/>
 <wire x1="-38.1" y1="-35.56" x2="-38.1" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="RI_L" gate="G$1" pin="2"/>
-<wire x1="-38.1" y1="-38.1" x2="-45.72" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-38.1" x2="-43.18" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-38.1" x2="-38.1" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="-38.1" y="-38.1"/>
 <wire x1="-38.1" y1="-43.18" x2="-22.86" y2="-43.18" width="0.1524" layer="91"/>
@@ -22377,7 +22377,7 @@ circuit to board.</text>
 <net name="SPKR_L+" class="0">
 <segment>
 <pinref part="CI_L" gate="G$1" pin="2"/>
-<wire x1="-66.04" y1="-38.1" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-38.1" x2="-68.58" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-38.1" x2="-68.58" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="SPKR_L+"/>
 <wire x1="-68.58" y1="-43.18" x2="-86.36" y2="-43.18" width="0.1524" layer="91"/>
@@ -22390,7 +22390,7 @@ circuit to board.</text>
 <wire x1="-86.36" y1="-45.72" x2="-68.58" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-45.72" x2="-68.58" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="CI_R" gate="G$1" pin="2"/>
-<wire x1="-68.58" y1="-50.8" x2="-66.04" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-50.8" x2="-63.5" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-76.2" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -22432,7 +22432,7 @@ circuit to board.</text>
 <wire x1="-38.1" y1="-45.72" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="RI_R" gate="G$1" pin="2"/>
 <wire x1="-38.1" y1="-50.8" x2="-38.1" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="-50.8" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-50.8" x2="-38.1" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-38.1" y="-50.8"/>
 </segment>
 </net>
@@ -22440,14 +22440,14 @@ circuit to board.</text>
 <segment>
 <pinref part="RI_L" gate="G$1" pin="1"/>
 <pinref part="CI_L" gate="G$1" pin="1"/>
-<wire x1="-55.88" y1="-38.1" x2="-58.42" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-38.1" x2="-55.88" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$77" class="0">
 <segment>
 <pinref part="CI_R" gate="G$1" pin="1"/>
 <pinref part="RI_R" gate="G$1" pin="1"/>
-<wire x1="-58.42" y1="-50.8" x2="-55.88" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-50.8" x2="-53.34" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MPU_INT" class="0">

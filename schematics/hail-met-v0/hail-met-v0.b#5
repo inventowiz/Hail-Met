@@ -2794,20 +2794,20 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="OC_DIGIKEY" value="609-4616-1-ND" x="70.4596" y="1.4732" size="1.778" layer="27" display="off"/>
 </element>
 <element name="LM4871" library="SparkFun" package="SO08" value="LM4871" x="15.24" y="20.32"/>
-<element name="RI_L" library="SparkFun-Passives" package="0805" value="20k" x="11.43" y="20.32" rot="R90"/>
-<element name="C2" library="adafruit" package="C0805K" value="0.1uF" x="13.97" y="13.97" rot="R270"/>
-<element name="RI_R" library="SparkFun-Passives" package="0805" value="20k" x="17.78" y="15.24" rot="R180"/>
+<element name="RI_L" library="SparkFun-Passives" package="0805" value="22K" x="11.43" y="20.32" rot="R90"/>
+<element name="C2" library="adafruit" package="C0805K" value="1uF" x="13.97" y="13.97" rot="R270"/>
+<element name="RI_R" library="SparkFun-Passives" package="0805" value="22K" x="17.78" y="15.24" rot="R180"/>
 <element name="C6" library="adafruit" package="C0805K" value="0.1uF" x="15.24" y="26.67" rot="R270"/>
-<element name="RF_R" library="SparkFun-Passives" package="0805" value="20k" x="19.05" y="20.32" rot="R270"/>
-<element name="RF_L" library="SparkFun-Passives" package="0805" value="20k" x="11.43" y="22.86"/>
-<element name="CI_L" library="adafruit" package="C0805K" value="" x="11.43" y="16.51" rot="R270"/>
-<element name="CI_R" library="adafruit" package="C0805K" value="" x="17.78" y="12.7" rot="R180"/>
+<element name="RF_R" library="SparkFun-Passives" package="0805" value="180K" x="19.05" y="20.32" rot="R270"/>
+<element name="RF_L" library="SparkFun-Passives" package="0805" value="180K" x="11.43" y="22.86"/>
+<element name="CI_L" library="adafruit" package="C0805K" value="2.2uF" x="11.43" y="16.51" rot="R270"/>
+<element name="CI_R" library="adafruit" package="C0805K" value="2.2uF" x="17.78" y="12.7" rot="R180"/>
 <element name="NTC_THERM" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="54.1274" y="25.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="57.4802" y="24.384" size="0.8128" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="MPU-6050" library="SparkFun-Connectors" package="1X08_LOCK" value="" x="48.26" y="57.15"/>
-<element name="CO_L" library="adafruit" package="C0805K" value="" x="12.7" y="26.67" rot="R90"/>
-<element name="CO_R" library="adafruit" package="C0805K" value="" x="17.78" y="26.67" rot="R90"/>
+<element name="CO_L" library="adafruit" package="C0805K" value="100uF" x="12.7" y="26.67" rot="R90"/>
+<element name="CO_R" library="adafruit" package="C0805K" value="100uF" x="17.78" y="26.67" rot="R90"/>
 <element name="PWR_BUTTON" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="64.8208" y="12.0904" smashed="yes" rot="R270">
 <attribute name="NAME" x="66.1162" y="14.6812" size="0.8128" layer="25" ratio="10" rot="R270"/>
 </element>

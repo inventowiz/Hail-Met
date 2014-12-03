@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -20814,8 +20814,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2K"/>
 <part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
-<part name="RT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="RT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="80k"/>
+<part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0805" value="22pF"/>
 <part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="240"/>

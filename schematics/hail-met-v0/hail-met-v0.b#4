@@ -2795,13 +2795,25 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="LM4871" library="SparkFun" package="SO08" value="LM4871" x="15.24" y="20.32"/>
 <element name="RI_L" library="SparkFun-Passives" package="0805" value="22K" x="11.43" y="20.32" rot="R90"/>
-<element name="C2" library="adafruit" package="C0805K" value="1uF" x="13.97" y="13.97" rot="R270"/>
-<element name="RI_R" library="SparkFun-Passives" package="0805" value="22K" x="17.78" y="15.24" rot="R180"/>
+<element name="C2" library="adafruit" package="C0805K" value="1uF" x="13.97" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="14.845" y="14.97" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="12.5526" y="13.4206" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="RI_R" library="SparkFun-Passives" package="0805" value="22K" x="17.78" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.177" y="14.4145" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="18.796" y="16.637" size="0.4064" layer="27" rot="R180"/>
+</element>
 <element name="C6" library="adafruit" package="C0805K" value="0.1uF" x="15.24" y="26.67" rot="R270"/>
 <element name="RF_R" library="SparkFun-Passives" package="0805" value="180K" x="19.05" y="20.32" rot="R270"/>
 <element name="RF_L" library="SparkFun-Passives" package="0805" value="180K" x="11.43" y="22.86"/>
-<element name="CI_L" library="adafruit" package="C0805K" value="2.2uF" x="11.43" y="16.51" rot="R270"/>
-<element name="CI_R" library="adafruit" package="C0805K" value="2.2uF" x="17.78" y="12.7" rot="R180"/>
+<element name="CI_L" library="adafruit" package="C0805K" value="2.2uF" x="11.43" y="16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.3812" y="17.002" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="10.165" y="17.5354" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="CI_R" library="adafruit" package="C0805K" value="2.2uF" x="17.78" y="12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.1704" y="11.7742" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="17.764" y="13.9142" size="0.4064" layer="27" rot="R180"/>
+</element>
 <element name="NTC_THERM" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="54.1274" y="25.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="57.4802" y="24.384" size="0.8128" layer="25" ratio="10" rot="R180"/>
 </element>
