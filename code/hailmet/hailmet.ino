@@ -16,6 +16,7 @@
 #define PIN_BT_DISCOVERABLE 4
 #define PIN_BT_CONNECTED 7
 #define PIN_LIGHT_SENSOR A0
+#define PIN_LOW_BATTERY A2
 #define PIN_BT_ACCEPT_REJECT A3
 #define PIN_BT_ENABLE 9
 #define PIN_HEADLIGHT 5
@@ -74,7 +75,7 @@ void timerInterrupt() {
   }
 }
 
-void toggleLeftTurnSignal() {
+void toggleLeftTurnSignal() {  
   if (helmet.getRightTurnSignal()) {
     helmet.disableRightTurnSignal();
   }
@@ -95,6 +96,16 @@ void toggleRightTurnSignal() {
     helmet.disableRightTurnSignal();
   } else {
     helmet.enableRightTurnSignal();
+  }
+}
+
+void updateLowBattery() {
+  boolean lowBattery = digitalRead(PIN_LOW_BATTERY);
+
+  if (lowBattery) {
+    helmet.enableLowBattery();
+  } else {
+    helmet.disableLowBattery();
   }
 }
 
@@ -181,6 +192,9 @@ void setup() {
   digitalWrite(PIN_BT_EVENT_CHANGE, HIGH);
   PCintPort::attachInterrupt(PIN_BT_EVENT_CHANGE, &btStateChanged, FALLING);
   
+  pinMode(PIN_LOW_BATTERY, INPUT);
+  PCintPort::attachInterrupt(PIN_LOW_BATTERY, &updateLowBattery, CHANGE);
+  
   pinMode(PIN_BT_ACCEPT_REJECT, INPUT);
   digitalWrite(PIN_BT_ACCEPT_REJECT, HIGH);
   
@@ -211,11 +225,14 @@ void setup() {
   Serial.setTimeout(60000);
   bt.init(Serial, PIN_BT_COMMAND_TOGGLE);
   handleBtStateChange();
+  
+  bt.configSettings();
 
   ledDriver.init(PIN_LED_DRIVER_LATCH, PIN_LED_DRIVER_ENABLE);
   
   helmet.init(ledDriver, PIN_HEADLIGHT);
   helmet.enableTaillight();
+  updateLowBattery();
   helmet.updateLights();
 
   Timer1.initialize(500000);

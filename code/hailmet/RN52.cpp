@@ -154,6 +154,17 @@ int RN52::getConnectionStatus() {
   return state.connectionStatus;
 }
 
+void RN52::configSettings() {
+  enterCommandMode();
+  serial->print("S%,2003\r");
+  waitForResponse();
+  serial->print("SN,Hail-Met\r");
+  waitForResponse();
+  serial->print("SS,0F\r");
+  waitForResponse();
+  exitCommandMode();
+}
+
 int RN52::ASCIIToNum(char c) {
   if (c >= '0' && c <= '9') {
     return c - '0';

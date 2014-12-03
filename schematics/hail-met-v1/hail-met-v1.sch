@@ -20955,7 +20955,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="JBATT" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="JSOLAR" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="MIC_L" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
-<part name="MIC_R" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="SPK_L" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="SPK_R" library="adafruit" deviceset="JST_2PIN" device="-SMT"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
@@ -21172,6 +21171,7 @@ L4941 TO-92 package
 <text x="-180.34" y="25.4" size="1.778" layer="91">PROG3 - Charging termination current: 
   125mA: 8.2K (our spec)
   1mA: 100K (Adafruit spec)</text>
+<text x="162.56" y="81.28" size="1.778" layer="94">x</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="116.84" y="58.42"/>
@@ -21275,7 +21275,6 @@ L4941 TO-92 package
 <instance part="JBATT" gate="G$1" x="-12.7" y="33.02"/>
 <instance part="JSOLAR" gate="G$1" x="-132.08" y="91.44"/>
 <instance part="MIC_L" gate="G$1" x="-53.34" y="-66.04"/>
-<instance part="MIC_R" gate="G$1" x="-53.34" y="-83.82"/>
 <instance part="SPK_L" gate="G$1" x="-43.18" y="-43.18"/>
 <instance part="SPK_R" gate="G$1" x="-43.18" y="-53.34"/>
 <instance part="GND17" gate="1" x="78.74" y="-38.1"/>
@@ -22303,16 +22302,6 @@ L4941 TO-92 package
 <pinref part="R23" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MIC_R-" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="MIC_R-"/>
-<wire x1="-86.36" y1="-58.42" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-81.28" x2="-76.2" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="MIC_R" gate="G$1" pin="1"/>
-<wire x1="-55.88" y1="-81.28" x2="-76.2" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-71.12" y="-81.28" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="MIC_L-" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="MIC_L-"/>
@@ -22321,16 +22310,6 @@ L4941 TO-92 package
 <pinref part="MIC_L" gate="G$1" pin="1"/>
 <wire x1="-71.12" y1="-63.5" x2="-55.88" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-71.12" y="-63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MIC_R+" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="MIC_R+"/>
-<wire x1="-86.36" y1="-63.5" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-83.82" x2="-73.66" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="MIC_R" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="-83.82" x2="-55.88" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-71.12" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPU_INT" class="0">
@@ -22532,18 +22511,6 @@ L4941 TO-92 package
 <pinref part="Q1" gate="G$1" pin="B"/>
 </segment>
 </net>
-<net name="PC1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="142.24" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
-<label x="144.78" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="AT_PINS" gate="G$1" pin="7"/>
-<wire x1="27.94" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
-<label x="27.94" y="2.54" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="BT_VOL_UP" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO5"/>
@@ -22728,6 +22695,16 @@ L4941 TO-92 package
 <pinref part="LED_LB" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="-66.04" x2="198.12" y2="-66.04" width="0.1524" layer="91"/>
 <label x="180.34" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PC1(ADC1)"/>
+<wire x1="142.24" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
+<label x="144.78" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="AT_PINS" gate="G$1" pin="7"/>
+<wire x1="27.94" y1="2.54" x2="35.56" y2="2.54" width="0.1524" layer="91"/>
+<label x="27.94" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHG_PG" class="0">

@@ -20909,9 +20909,9 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="270K"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
 <part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2K"/>
-<part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="8K"/>
+<part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="8.2K"/>
 <part name="RT1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
-<part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="80K"/>
+<part name="RT2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="82K"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0805" value="2.2uF"/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1uF"/>
@@ -21028,9 +21028,9 @@ to batteries</text>
 <text x="-58.42" y="2.54" size="1.778" layer="91" distance="5" align="bottom-right">10K NTC Thermistor:</text>
 <text x="-55.88" y="5.08" size="1.778" layer="91" distance="5">RT1 = 0, RT2 = 10K</text>
 <text x="-55.88" y="2.54" size="1.778" layer="91" distance="5">RT1 = 1k, RT2 = 150k</text>
-<text x="-172.72" y="15.24" size="1.778" layer="91" distance="5">Charge Rate = 1000V/PROG1</text>
-<text x="-162.56" y="10.16" size="1.778" layer="91" distance="5">1.0K = 1000mA</text>
-<text x="-162.56" y="7.62" size="1.778" layer="91" distance="5">2.0K = 500mA</text>
+<text x="-180.34" y="17.78" size="1.778" layer="91" distance="5">Charge Rate = 1000V/PROG1</text>
+<text x="-170.18" y="12.7" size="1.778" layer="91" distance="5">1.0K = 1000mA</text>
+<text x="-170.18" y="10.16" size="1.778" layer="91" distance="5">2.0K = 500mA</text>
 <text x="-111.76" y="71.12" size="1.778" layer="91" distance="5">NEED TO SET THIS TO VREG.
 For 6V solar panel, use 1KOhm / 1KOhm</text>
 <text x="15.24" y="63.5" size="1.778" layer="91">DONE</text>
@@ -21040,7 +21040,7 @@ For 6V solar panel, use 1KOhm / 1KOhm</text>
 <wire x1="-2.54" y1="58.42" x2="-2.54" y2="104.14" width="0.1524" layer="94"/>
 <text x="12.7" y="60.96" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
-<text x="-162.56" y="0" size="1.778" layer="91" align="bottom-right">Design:
+<text x="-167.64" y="0" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
 <text x="68.58" y="-96.52" size="1.778" layer="91" align="bottom-right">Design:
 Validate:</text>
@@ -21052,7 +21052,7 @@ Validate:</text>
 <wire x1="220.98" y1="-7.62" x2="220.98" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="220.98" y1="-106.68" x2="53.34" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="53.34" y1="-106.68" x2="53.34" y2="-7.62" width="0.1524" layer="94"/>
-<text x="-160.02" y="2.54" size="1.778" layer="91">Done, need VCC resistor check</text>
+<text x="-165.1" y="2.54" size="1.778" layer="91">Done, need VCC resistor check</text>
 <wire x1="50.8" y1="-7.62" x2="50.8" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="50.8" y1="-106.68" x2="-187.96" y2="-106.68" width="0.1524" layer="94"/>
 <wire x1="-187.96" y1="-106.68" x2="-187.96" y2="-7.62" width="0.1524" layer="94"/>
@@ -21169,6 +21169,9 @@ circuit to board.</text>
 <text x="0" y="68.58" size="1.778" layer="94">Voltage Regulator:
 L4941 TO-92 package
 </text>
+<text x="-180.34" y="25.4" size="1.778" layer="91">PROG3 - Charging termination current: 
+  125mA: 8.2K (our spec)
+  1mA: 100K (Adafruit spec)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="116.84" y="58.42"/>
