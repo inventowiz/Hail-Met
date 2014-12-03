@@ -109,6 +109,9 @@ class RN52 {
     void previousTrack();
     void playPause();
     void activateVoiceCommand();
+    
+    // Config
+    void configSettings();
 
     int getConnectionStatus();
     bool isInCommandMode();

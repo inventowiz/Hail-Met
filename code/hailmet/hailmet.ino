@@ -75,7 +75,7 @@ void timerInterrupt() {
   }
 }
 
-void toggleLeftTurnSignal() {
+void toggleLeftTurnSignal() {  
   if (helmet.getRightTurnSignal()) {
     helmet.disableRightTurnSignal();
   }
@@ -225,6 +225,8 @@ void setup() {
   Serial.setTimeout(60000);
   bt.init(Serial, PIN_BT_COMMAND_TOGGLE);
   handleBtStateChange();
+  
+  bt.configSettings();
 
   ledDriver.init(PIN_LED_DRIVER_LATCH, PIN_LED_DRIVER_ENABLE);
   
