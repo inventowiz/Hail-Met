@@ -1,0 +1,17 @@
+Part Extents:
+58.3125 <= x <= 81.3875
+61.8175 <= y <= 77.8825
+0.0001 <= z <= 25.0001
+1028 output triangles
+1028 input triangles
+0 degenerate sided triangles removed
+0 narrow-gap filling triangles created
+0 wide-gap filling triangles created
+0 triangles reoriented
+0 unmatched triangle sides
+1 distinct shell:
+Shell volume: 3477.7	(num triangles: 1028)
+58.3125 <= x <= 81.3875
+61.8175 <= y <= 77.8825
+0.0001 <= z <= 25.0001
+C:\Users\Patrick\Documents\College_Classes\Senior_Year_(fall)\473\hailmet\3dModels\powerSwitch\powerSwitch_cubify.stl was GOOD
