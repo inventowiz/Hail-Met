@@ -231,7 +231,6 @@ void setup() {
   ledDriver.init(PIN_LED_DRIVER_LATCH, PIN_LED_DRIVER_ENABLE);
   
   helmet.init(ledDriver, PIN_HEADLIGHT);
-  helmet.enableTaillight();
   updateLowBattery();
   helmet.updateLights();
 
@@ -252,6 +251,7 @@ void loop() {
   if (helmet.getHeadlight()) {
     if (lightSensorVal > HEADLIGHT_MAX_TRIGGER) {
       helmet.disableHeadlight();
+      helmet.disableTaillight();
     } else {
       helmet.setHeadlightBrightness(max(HEADLIGHT_MIN_BRIGHTNESS, HEADLIGHT_MAX_BRIGHTNESS - adjustedLightVal));
     }
@@ -259,6 +259,7 @@ void loop() {
     if (lightSensorVal < HEADLIGHT_MIN_TRIGGER) {
       helmet.setHeadlightBrightness(max(HEADLIGHT_MIN_BRIGHTNESS, HEADLIGHT_MAX_BRIGHTNESS - adjustedLightVal));
       helmet.enableHeadlight();
+      helmet.enableTaillight();
     }
   }
   

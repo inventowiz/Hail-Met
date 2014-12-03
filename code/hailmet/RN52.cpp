@@ -156,11 +156,11 @@ int RN52::getConnectionStatus() {
 
 void RN52::configSettings() {
   enterCommandMode();
-  serial->print("S%,2003\r");
+  serial->print("S%,0003\r");
   waitForResponse();
   serial->print("SN,Hail-Met\r");
   waitForResponse();
-  serial->print("SS,0F\r");
+  serial->print("SS,08\r");
   waitForResponse();
   exitCommandMode();
 }

@@ -12,7 +12,7 @@ class HelmetIO {
   private:
     LedDriver *ledDriver;
     bool taillight, leftSignal, rightSignal, headlight;
-    bool lowBattery, indicatorActive;
+    bool lowBattery, indicatorActive, taillightActive;
     int headlightPin;
     int lowBatteryDelay;
     int callStatus;

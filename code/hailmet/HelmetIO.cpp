@@ -15,8 +15,12 @@
 char HelmetIO::generateLedStates() {
   char res = 0;
   
-  if (taillight) {
+  if (taillight && taillightActive) {
     res |= 0x8;
+    taillightActive = true;
+  } else {
+    res &= ~(0x8);
+    taillightActive = false;
   }
   
   if (leftSignal && leftSignalsActive == 0) {
@@ -77,6 +81,7 @@ void HelmetIO::init(LedDriver &ledDriver, int headlightPin) {
   leftSignalsActive = 0;
   rightSignalsActive = 0;
   indicatorActive = false;
+  taillightActive = false;
   headlightBrightness = 255;
   lowBatteryDelay = 0;
   callStatus = NO_CALL;
