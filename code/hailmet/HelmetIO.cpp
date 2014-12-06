@@ -15,7 +15,7 @@
 char HelmetIO::generateLedStates() {
   char res = 0;
   
-  if (taillight && taillightActive) {
+  if (taillight && !taillightActive) {
     res |= 0x8;
     taillightActive = true;
   } else {
